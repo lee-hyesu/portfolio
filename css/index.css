@@ -1,0 +1,188 @@
+@charset "utf-8";
+
+/* 'Pretendard' ,sans-serif */
+@import url(../assets/style/pretendard-subset.css);
+
+/* 
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal; 
+*/
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Playfair+Display:wght@400..900&display=swap');  
+
+/*** CSS 변수 ***/
+:root {
+  /* font */
+  --font-ko: 'Pretendard',-apple-system, BlinkMacSystemFont, "Malgun Gothic", "맑은 고딕", helvetica, "Apple SD Gothic Neo", sans-serif;
+  --font-en: "Playfair Display", -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Apple SD Gothic Neo", Arial ,sans-serif;
+
+  --color-blue: #1072FA;
+  --color-gray: #DEDFDF;
+  --font-gray: #A6A5A2;
+}
+
+body {
+  font-family: var(--font-en);
+}
+
+/* header */
+header {
+  display: flex;
+  gap: 11vw;
+  justify-content: space-between;
+  padding: 1.2vw;
+}
+header .header-marquee {
+  font-family: var(--font-ko);
+  width: 30%;
+  height: 30px;
+  line-height: 1.6;
+  border: 1px var(--color-gray) solid;
+  overflow: hidden;
+  display: flex;
+  white-space: nowrap;
+}
+header .header-marquee .marquee-text {
+  animation: marquee 10s linear infinite;
+  margin-right: 10px;
+}
+@keyframes marquee {
+  0% {
+    transform: translateX(0)
+  }
+
+  100% {
+    transform: translateX(-100%);
+  }
+}
+header .gnb {
+  display: flex;
+}
+header .gnb li:first-child {
+  padding: 0;
+}
+header .gnb li {
+  padding-left: 20px;
+}
+
+/* main */
+.main {
+  /* background-color: #ddd; */
+  margin-top: 10vw;
+  text-align: center;
+}
+.main .main-text {
+  display: flex;
+  flex-direction: column;
+}
+.main .main-text h1 {
+  font-size: 7rem;
+  font-weight: 400;
+}
+.main .main-text span {
+  position: relative;
+}
+/* .main .main-text span::before {
+  content: "";
+  background-color: var(--color-blue);
+  width: 580px;
+  height: 3px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+} */
+
+/* footer */
+footer {
+  margin-top: 14vw;
+}
+footer .footer-text {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* 배경 동그라미 효과 */
+.box {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  overflow: hidden;
+  /* background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%); */
+}
+
+.effect {
+  position: fixed;
+  top: 70%;
+  left: 0%;
+  animation: spin 25s infinite linear;
+  border-radius: 50%;
+  transform-origin: 50% 48%;
+  width: 3px;
+  height: 3px; 
+  background-color: var(--color-gray);
+/* Alternate color scheme:
+  background-image: linear-gradient(15deg, rgba(19, 84, 122, 0.2) 0%, rgba(128, 208, 199, 0.2) 100%); */
+}
+.effect:nth-child(2) {
+  left: 5%;
+  animation-duration: 5s;
+}
+.effect:nth-child(3) {
+  left: 6%;
+  margin-top: 10px;
+  animation-duration: 7s;
+}
+.effect:nth-child(4) {
+  left: 7%;
+  animation-duration: 9s;
+}
+.effect:nth-child(5) {
+  left: 8%;
+  margin-top: 10px;
+  animation-duration: 11s;
+}
+.effect:nth-child(6) {
+  left: 9%;
+  animation-duration: 12s;
+}
+.effect:nth-child(7) {
+  left: 10%;
+  margin-top: 10px;
+  animation-duration: 13s;
+}
+.effect:nth-child(8) {
+  left: 11%;
+  animation-duration: 5s;
+}
+.effect:nth-child(9) {
+  left: 12%;
+  margin-top: 10px;
+  animation-duration: 7s;
+}
+.effect:nth-child(10) {
+  left: 13%;
+  animation-duration: 9s;
+}
+.effect:nth-child(11) {
+  left: 14%;
+  margin-top: 10px;
+  animation-duration: 11s;
+}
+.effect:nth-child(12) {
+  left: 15%;
+  animation-duration: 12s;
+}
+.effect:nth-child(13) {
+  left: 16%;
+  margin-top: 10px;
+  animation-duration: 13s;
+}
+@keyframes spin {
+  from {
+    transform: rotate(360deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
+}
