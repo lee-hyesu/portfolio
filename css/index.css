@@ -31,21 +31,22 @@ header {
   display: flex;
   gap: 11vw;
   justify-content: space-between;
-  padding: 1.2vw;
+  align-items: center;
+  padding: 2.2vw;
 }
 header .header-marquee {
   font-family: var(--font-ko);
-  width: 30%;
-  height: 30px;
-  line-height: 1.6;
+  width: 37.5vw;
+  height: 2.7vw;
+  line-height: 2.2;
   border: 1px var(--color-gray) solid;
   overflow: hidden;
   display: flex;
   white-space: nowrap;
 }
 header .header-marquee .marquee-text {
-  animation: marquee 10s linear infinite;
-  margin-right: 10px;
+  animation: marquee 30s linear infinite;
+  font-size: 1.2vw;
 }
 @keyframes marquee {
   0% {
@@ -55,6 +56,13 @@ header .header-marquee .marquee-text {
   100% {
     transform: translateX(-100%);
   }
+}
+header .header-marquee .marquee-text .circle {
+  display: inline-block;
+  width: 0.4vw;
+  height: 0.4vw;
+  background-color: var(--color-blue);
+  margin: 0.2vw 0.8vw;
 }
 header .gnb {
   display: flex;
@@ -68,8 +76,7 @@ header .gnb li {
 
 /* main */
 .main {
-  /* background-color: #ddd; */
-  margin-top: 10vw;
+  margin-top: 8vw;
   text-align: center;
 }
 .main .main-text {
@@ -96,6 +103,7 @@ header .gnb li {
 /* footer */
 footer {
   margin-top: 14vw;
+  padding: 0 2.2vw;
 }
 footer .footer-text {
   display: flex;

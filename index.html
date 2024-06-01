@@ -15,9 +15,9 @@
   <link rel="stylesheet" href="./css/index.css"><!-- 헤더 및 index 내용 포함 -->
   <!-- 이 페이지에만 들어가는 style -->
   <!-- jQuery -->
-  <script src="../assets/jquery-3.7.1.min.js"></script>
-  <script src="../assets/gsap.min.js"></script>
-  <script src="../연습/TextPlugin.min.js"></script>
+  <script src="./assets/jquery-3.7.1.min.js"></script>
+  <script src="./assets/gsap.min.js"></script>
+  <script src="./assets/TextPlugin.min.js"></script>
 
   <!-- Plug In -->
 </head>
@@ -41,13 +41,13 @@
   </div>
 
   <header>
-      <a href="#">로고</a>
+      <a href="#">Welcome to Lee Hye-Su's portfolio</a>
       <div class="header-marquee">
-        <div class="marquee-text">안녕하세요, 웹 퍼블리셔 이혜수입니다!</div>
-        <div class="marquee-text">안녕하세요, 웹 퍼블리셔 이혜수입니다!</div>
-        <div class="marquee-text">안녕하세요, 웹 퍼블리셔 이혜수입니다!</div>
-        <div class="marquee-text">안녕하세요, 웹 퍼블리셔 이혜수입니다!</div>
-        <div class="marquee-text">안녕하세요, 웹 퍼블리셔 이혜수입니다!</div>
+        <div class="marquee-text">안녕하세요, 웹 퍼블리셔 이혜수입니다!<span class="circle"></span></div>
+        <div class="marquee-text">안녕하세요, 웹 퍼블리셔 이혜수입니다!<span class="circle"></span></div>
+        <div class="marquee-text">안녕하세요, 웹 퍼블리셔 이혜수입니다!<span class="circle"></span></div>
+        <div class="marquee-text">안녕하세요, 웹 퍼블리셔 이혜수입니다!<span class="circle"></span></div>
+        <div class="marquee-text">안녕하세요, 웹 퍼블리셔 이혜수입니다!<span class="circle"></span></div>
       </div>
       <ul class="gnb">
         <li>About</li>
@@ -84,7 +84,7 @@
   </footer>
 
   <script>
-    gsap.to("span", { duration: 3, text: "Lee Hye Su." })
+    gsap.to(".main-text span", { duration: 5, text: "Lee Hye Su." })
   </script>
 </body>
 
