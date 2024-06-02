@@ -17,31 +17,18 @@
   <!-- jQuery -->
   <script src="./assets/jquery-3.7.1.min.js"></script>
   <script src="./assets/gsap.min.js"></script>
-  <script src="./assets/TextPlugin.min.js"></script>
-
   <!-- Plug In -->
+  <script src="./assets/TextPlugin.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+  <!-- <script src="path/to/particles.min.js"></script> -->
+  <!-- 이 페이지에만 들어가는 js -->
+  <script defer src="./js/index.js"></script>
 </head>
 
 <body>
-  <div class="box">
-    <div class="effect"></div>
-    <div class="effect"></div>
-    <div class="effect"></div>
-    <div class="effect"></div>
-    <div class="effect"></div>
-    <div class="effect"></div>
-    <div class="effect"></div>
-    <div class="effect"></div>
-    <div class="effect"></div>
-    <div class="effect"></div>
-    <div class="effect"></div>
-    <div class="effect"></div>
-    <div class="effect"></div>
-    <div class="effect"></div>
-  </div>
-
   <header>
-      <a href="#">Welcome to Lee Hye-Su's portfolio</a>
+    <div class="header-inner">
+      <a href="#">Welcome to Hye-Su's portfolio</a>
       <div class="header-marquee">
         <div class="marquee-text">안녕하세요, 웹 퍼블리셔 이혜수입니다!<span class="circle"></span></div>
         <div class="marquee-text">안녕하세요, 웹 퍼블리셔 이혜수입니다!<span class="circle"></span></div>
@@ -50,42 +37,62 @@
         <div class="marquee-text">안녕하세요, 웹 퍼블리셔 이혜수입니다!<span class="circle"></span></div>
       </div>
       <ul class="gnb">
-        <li>About</li>
-        <li>Work</li>
-        <li>Contact</li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#">Works</a></li>
+        <li><a href="">Contact</a></li>
       </ul>
+    </div>
   </header>
 
   <section class="main">
+    <div id="particles-js"></div>
+        
+      
+
     <div class="main-text">
       <h1>Web Publisher<br>
         <span></span>
       </h1>
     </div>
-  </section>
-
-  <footer>
-    <div class="footer-text">
-      <div class="footer-inner">
+    <div class="bottom-text">
+      <div class="bottom-inner">
         <p>Web Designer</p>
       </div>
-      <div class="footer-inner">
+      <div class="bottom-inner">
         <p>Web Publisher</p>
       </div>
-      <div class="footer-inner">
+      <div class="bottom-inner">
         <p>ragnarok94@naver.com</p>
       </div>
-      <div class="footer-inner">
+      <div class="bottom-inner">
         <a href="https://github.com/lee-hyesu" target="_blank">
           <p>https://github.com/lee-hyesu</p>
         </a>
       </div>
     </div>
-  </footer>
+  </section>
 
-  <script>
-    gsap.to(".main-text span", { duration: 5, text: "Lee Hye Su." })
-  </script>
+  <section id="about">
+    <h2>About</h2>
+    <div class="about-inner">
+      <svg width="38" height="38" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <g id="book-open" clip-path="url(#clip0_47_449)">
+          <path id="Vector"
+            d="M35.7721 0.0046063C32.1567 0.2684 24.9709 1.22857 20.5349 4.71981C20.2288 4.9607 20.0552 5.38904 20.0552 5.8369V36.7007C20.0552 37.6804 20.8885 38.2996 21.5911 37.845C26.1551 34.8915 32.7558 34.0857 36.0195 33.8652C37.1338 33.7897 38 32.6412 38 31.2645V2.60861C38.0007 1.10643 36.9873 -0.0836076 35.7721 0.0046063ZM17.4651 4.71981C13.0297 1.22857 5.84392 0.269248 2.22858 0.0046063C1.01335 -0.0836076 0 1.10643 0 2.60861V31.2654C0 32.6429 0.86623 33.7914 1.98052 33.866C5.24554 34.0865 11.8495 34.8932 16.4135 37.8484C17.1142 38.3021 17.9448 37.6838 17.9448 36.7067V5.82163C17.9448 5.37293 17.7719 4.96155 17.4651 4.71981Z"
+            fill="black" />
+        </g>
+        <defs>
+          <clipPath id="clip0_47_449">
+            <rect width="38" height="38" fill="white" />
+          </clipPath>
+        </defs>
+      </svg>
+      <h3>Who Am I?</h3>
+      <p>이용자의 편의성을 가장 추구합니다.</p>
+    </div>
+  </section>
+
+
 </body>
 
 </html>

@@ -21,24 +21,41 @@
   --color-gray: #DEDFDF;
   --font-gray: #A6A5A2;
 }
-
 body {
   font-family: var(--font-en);
+  scroll-behavior: smooth;
+  text-align: center;
 }
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-blue);
+  border-radius: 25px;
+}
+::-webkit-scrollbar-track {
+  background: #000;
+}
+
 
 /* header */
 header {
+  padding: 2.2vw 0;
+}
+header .header-inner {
   display: flex;
-  gap: 11vw;
-  justify-content: space-between;
+  padding: 0 2.2vw;
   align-items: center;
-  padding: 2.2vw;
+}
+header .header-inner a {
+  font-size: 1.2rem;
 }
 header .header-marquee {
   font-family: var(--font-ko);
-  width: 37.5vw;
+  width: 32vw;
   height: 2.7vw;
   line-height: 2.2;
+  margin: 0 auto;
   border: 1px var(--color-gray) solid;
   overflow: hidden;
   display: flex;
@@ -66,20 +83,32 @@ header .header-marquee .marquee-text .circle {
 }
 header .gnb {
   display: flex;
+  height: 37px;
 }
 header .gnb li:first-child {
-  padding: 0;
+  margin-left: 0;
 }
 header .gnb li {
-  padding-left: 20px;
+  margin-left: 15px;
+  padding: 5px;
+}
+header .gnb li:last-child {
+  padding-right: 0;
+}
+header .gnb li:hover {
+  border-bottom: 2px solid var(--color-blue);
+  color: var(--color-blue);
 }
 
 /* main */
 .main {
-  margin-top: 8vw;
+  height: calc(100vh - 4.4vw);
   text-align: center;
+  position: relative;
+  /* background: url(../images/Union\ \(2\).svg) no-repeat 0 85% / cover; */
 }
 .main .main-text {
+  padding-top: 8vw;
   display: flex;
   flex-direction: column;
 }
@@ -90,107 +119,63 @@ header .gnb li {
 .main .main-text span {
   position: relative;
 }
-/* .main .main-text span::before {
+.main .main-text span::before {
   content: "";
   background-color: var(--color-blue);
   width: 580px;
-  height: 3px;
+  height: 4px;
   position: absolute;
   bottom: 0;
   left: 0;
-} */
+  right: 0;
 
-/* footer */
-footer {
-  margin-top: 14vw;
-  padding: 0 2.2vw;
+  transform: scaleX(1);
+  transform-origin: right;
+  transition: transform 0.3s ease;
 }
-footer .footer-text {
+.main .main-text span:hover::before {
+  transform: scaleX(0);
+}
+.main .main-text span::after {
+  content: "";
+  background-color: var(--color-blue);
+  width: 580px;
+  height: 4px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: all 0.3s ease;
+  transition-delay: 0.1s;
+}
+.main .main-text span:hover::after {
+  transform: scaleX(1);
+}
+
+
+.bottom-text {
   display: flex;
   justify-content: space-between;
+  margin-top: 14vw;
+  padding: 0 2.2vw;
+  font-size: 1.1rem;
+}
+.bottom-text .bottom-inner {
 }
 
 /* 배경 동그라미 효과 */
-.box {
+#particles-js {
+  position: absolute;
   width: 100%;
   height: 100%;
-  position: absolute;
-  overflow: hidden;
-  /* background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%); */
-}
-
-.effect {
-  position: fixed;
-  top: 70%;
-  left: 0%;
-  animation: spin 25s infinite linear;
-  border-radius: 50%;
-  transform-origin: 50% 48%;
-  width: 3px;
-  height: 3px; 
-  background-color: var(--color-gray);
-/* Alternate color scheme:
-  background-image: linear-gradient(15deg, rgba(19, 84, 122, 0.2) 0%, rgba(128, 208, 199, 0.2) 100%); */
-}
-.effect:nth-child(2) {
-  left: 5%;
-  animation-duration: 5s;
-}
-.effect:nth-child(3) {
-  left: 6%;
-  margin-top: 10px;
-  animation-duration: 7s;
-}
-.effect:nth-child(4) {
-  left: 7%;
-  animation-duration: 9s;
-}
-.effect:nth-child(5) {
-  left: 8%;
-  margin-top: 10px;
-  animation-duration: 11s;
-}
-.effect:nth-child(6) {
-  left: 9%;
-  animation-duration: 12s;
-}
-.effect:nth-child(7) {
-  left: 10%;
-  margin-top: 10px;
-  animation-duration: 13s;
-}
-.effect:nth-child(8) {
-  left: 11%;
-  animation-duration: 5s;
-}
-.effect:nth-child(9) {
-  left: 12%;
-  margin-top: 10px;
-  animation-duration: 7s;
-}
-.effect:nth-child(10) {
-  left: 13%;
-  animation-duration: 9s;
-}
-.effect:nth-child(11) {
-  left: 14%;
-  margin-top: 10px;
-  animation-duration: 11s;
-}
-.effect:nth-child(12) {
-  left: 15%;
-  animation-duration: 12s;
-}
-.effect:nth-child(13) {
-  left: 16%;
-  margin-top: 10px;
-  animation-duration: 13s;
-}
-@keyframes spin {
-  from {
-    transform: rotate(360deg);
-  }
-  to {
-    transform: rotate(0deg);
-  }
+  bottom: 5vw;
+  background-color: transparent;
+  background-image: url("");
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  z-index: -9;
 }
