@@ -176,7 +176,7 @@ header .gnb li:hover a {
 
 /* main */
 .main {
-  height: calc(100vh - 4.4vw);
+  height: 100%;
   text-align: center;
   position: relative;
 }
@@ -246,10 +246,9 @@ header .gnb li:hover a {
   padding: 0 2.2vw;
   font-size: 1.1rem;
 }
-.bottom-text .bottom-inner {
-}
 
-/* 배경 파티클 효과 */
+/* 
+배경 파티클 효과
 #particles-js {
   position: absolute;
   width: 100%;
@@ -259,5 +258,7 @@ header .gnb li:hover a {
   background-size: cover;
   background-position: 50% 50%;
   background-repeat: no-repeat;
-  /* z-index: -9; */
+  z-index: -9;
 }
+*/
+
