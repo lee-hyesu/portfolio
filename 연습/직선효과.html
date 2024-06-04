@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="utf-8">
+  <title>제목</title>
+  <style>
+    body {
+  font-family: 'Srisakdi', cursive;
+  text-align: center;
+}
+
+h1 {
+  position: relative;
+  display: inline-block;
+  
+  &::after, &::before {
+    content: '';
+    position: absolute;
+    width: 120px;
+    height: 3px;
+    background-color: currentcolor;
+    top: 55%;
+    animation: animateLine 1s;
+  }
+  &::after {
+    left: -140px;
+  }
+  &::before {
+    right: -140px;
+  }
+}
+
+@keyframes animateLine {
+  from { transform: scale(0); }
+  to { transform: scale(1); }
+}
+  </style>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Srisakdi:700">
+</head>
+
+<body>
+  <h1 class="line-effect">La historia de Juan</h1>
+</body>
+
+</html>

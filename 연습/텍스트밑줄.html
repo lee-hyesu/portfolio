@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <style>
+    /* 기본 스타일 */
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding-top: 100px;
+    }
+
+    /* 밑줄 스타일 */
+    .auto-underline::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100px;
+      height: 10px;
+      background-color: #000;
+      /* 밑줄 색상 */
+      transform: scaleX(0);
+      /* 초기에는 밑줄을 없앰 */
+      transform-origin: bottom right;
+      transition: transform 0.5s ease-in-out;
+    }
+
+    /* 자동 밑줄을 나타내는 클래스 */
+    .auto-underline.auto-underline-active::after {
+      transform: scaleX(1);
+      /* 밑줄이 나타남 */
+    }
+  </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Auto Underline</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <div class="auto-underline">Text with Auto Underline</div>
+
+  <script>
+    // DOM이 준비되면 실행
+    document.addEventListener("DOMContentLoaded", function () {
+      // 반복적으로 클래스를 토글하는 함수
+      function toggleUnderline() {
+        var text = document.querySelector(".auto-underline");
+        text.classList.toggle("auto-underline-active");
+      }
+
+      // 일정한 간격으로 클래스를 토글 (예: 2초마다)
+      setInterval(toggleUnderline, 2000); // 2초마다 토글
+    });
+
+  </script>
+
+</body>
+
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="utf-8">
+  <title>제목</title>
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="./delay.css">
+
+  <script src="../assets/jquery-3.7.1.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.15.0/prism.min.js"></script>
+  <script src="https://unpkg.com/pageable@latest/dist/pageable.min.js"></script>
+</head>
+
+<body>
+  <div class="anchors">
+    <ul></ul>
+  </div>
+
+  <main>
+    <section data-anchor="Page 1">
+      <div class="text">
+        <h1>Add a delay for effect.</h1>
+      </div>
+    </section>
+    <section data-anchor="Page 2">
+      <div class="text">Page 2</div>
+    </section>
+    <section data-anchor="Page 3">
+      <div class="text">Page 3</div>
+    </section>
+    <section data-anchor="Page 4">
+      <div class="text">Page 4</div>
+    </section>
+    <section data-anchor="Page 5">
+      <div class="text">Page 5</div>
+    </section>
+    <section data-anchor="Page 6">
+      <div class="text">Page 6</div>
+    </section>
+    <section data-anchor="Page 7">
+      <div class="text">Page 7</div>
+    </section>
+  </main>
+
+  <script>
+    const pageable = new Pageable("main", {
+      animation: 400,
+      delay: 300,
+      onBeforeStart: function () {
+        this.pages.forEach((page, i) => {
+          page.classList.remove("pg-active");
+        });
+      }
+    });
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="utf-8">
+  <title>마우스hover 텍스트 표시</title>
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+      overflow: hidden;
+      background-color: black;
+    }
+
+    .upper_text,
+    .pointer {
+      position: fixed;
+      top: 40vh;
+      left: 40vw;
+      width: 400px;
+      color: chartreuse;
+      font-size: 50px;
+      cursor: none;
+      text-align: center;
+    }
+
+    .upper_text {
+      clip-path: polygon(0% 0%, 100% 0%, 100% 50%, 0% 50%);
+    }
+  </style>
+  <script src="../assets/jquery-3.7.1.min.js"></script>
+</head>
+
+<body>
+  <div class="upper_text">
+    Who Am I?
+  </div>
+  <div class="pointer">
+    Who Am I?
+  </div>
+
+  <script>
+    document.addEventListener('mousemove', (e) => {
+      const pointer = document.querySelector('.pointer');
+
+      pointer.style.clipPath =
+        `circle(50px at ${e.offsetX}px ${e.offsetY}px)`;
+    });
+  </script>
+</body>
+
+</html>

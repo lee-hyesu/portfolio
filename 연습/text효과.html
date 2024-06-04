@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="utf-8">
+  <title>제목</title>
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+  <script src="../assets/jquery-3.7.1.min.js"></script>
+  <script src="../assets/gsap.min.js"></script>
+</head>
+
+<body>
+  <main id="main">
+    <div class="text__inner">
+      <div class="ti1">let's <em>introduce</em></div>
+      <div class="ti2 split">frontend developer's</div>
+      <div class="ti3"><em>all</em> works <em>of</em> portfolio</div>
+    </div>
+    <div class="img__inner">
+      <img class="ii1" src="img/figure01.png" alt="이미지1">
+      <img class="ii2" src="img/figure02.png" alt="이미지2">
+      <img class="ii3" src="img/figure03.png" alt="이미지3">
+    </div>
+    <div id="webgl">
+      <iframe src="three.html" frameborder="0"></iframe>
+    </div>
+  </main>
+  <!-- //main -->
+
+  <footer id="footer">
+    <a href="https://duektmf34.tistory.com/" target="_blank">BLOG</a>
+  </footer>
+  <!-- //footer -->
+
+  <script>
+    // 글씨 분리하기
+    document.querySelectorAll(".split").forEach(desc => {
+      let splitText = desc.innerText;
+      let splitWrap = splitText.split('').join("</span><span aria-hidden:'true'>");
+      splitWrap = "<span aria-hidden:'true'>" + splitWrap + "</span>";
+      desc.innerHTML = splitWrap;
+      desc.setAttribute("aria-label", splitText);
+    });
+
+    // 메인 기본세팅
+    gsap.set(".text__inner .ti1", { opacity: 0, y: "10vh" });
+    gsap.set(".text__inner .ti2 span", { opacity: 0, x: 500, scale: 10, display: "inline-block", minWidth: "1.6vw" });
+    gsap.set(".text__inner .ti3", { opacity: 0, y: "-10vh" });
+    gsap.set(".img__inner .ii1", { opacity: 0, scale: 5 });
+    gsap.set(".img__inner .ii2", { opacity: 0, scale: 5 });
+    gsap.set(".img__inner .ii3", { opacity: 0, scale: 5 });
+    gsap.set("#header", { y: -100 });
+    gsap.set("#footer", { y: 100 });
+    gsap.set("#webgl", { opacity: 0 });
+
+    // 메인 애니메이션\
+    setTimeout(() => {
+      let tl = gsap.timeline();
+
+      tl.to(".text__inner .ti2 span", { opacity: 1, scale: 1, x: 0, duration: 0.6, stagger: 0.1, ease: Power3.easeInOut })
+      tl.to(".text__inner .ti1", { opacity: 1, y: 0, duration: 0.5, ease: Circ.easOut }, "ee +=0.5")
+      tl.to(".text__inner .ti3", { opacity: 1, y: 0, duration: 0.5, ease: Circ.easOut }, "ee +=0.5")
+      tl.to(".img__inner .ii1", { duration: 0.5, opacity: 1, scale: 1, y: "-40vh" }, "+=0.5")
+      tl.to(".img__inner .ii2", { duration: 0.5, opacity: 1, scale: 1, x: -50, y: "-3vh" }, "+=0.5")
+      tl.to(".img__inner .ii3", { duration: 0.5, opacity: 1, scale: 1, y: "10vh" }, "+=0.5")
+      tl.to("#header", { duration: 0.5, y: 0 }, "ss +=0.5");
+      tl.to("#footer", { duration: 0.5, y: 0 }, "ss +=0.5");
+      tl.to("#webgl", { duration: 1, opacity: 1 });
+    }, 3000);
+  </script>
+</body>
+
+</html>
