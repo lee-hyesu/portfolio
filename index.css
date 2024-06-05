@@ -9,16 +9,17 @@
   font-weight: <weight>;
   font-style: normal; 
 */
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Playfair+Display:wght@400..900&display=swap');  
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Playfair+Display:wght@400..900&display=swap');
 
 /*** CSS 변수 ***/
 :root {
   /* font */
-  --font-ko: 'Pretendard',-apple-system, BlinkMacSystemFont, "Malgun Gothic", "맑은 고딕", helvetica, "Apple SD Gothic Neo", sans-serif;
-  --font-en: "Playfair Display", -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Apple SD Gothic Neo", Arial ,sans-serif;
+  --font-ko: 'Pretendard', -apple-system, BlinkMacSystemFont, "Malgun Gothic", "맑은 고딕", helvetica, "Apple SD Gothic Neo", sans-serif;
+  --font-en: "Playfair Display", -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Apple SD Gothic Neo", Arial, sans-serif;
 
   --color-blue: #1072FA;
   --color-gray: #DEDFDF;
+  --color-primary: #fffdf9;
   --font-gray: #A6A5A2;
 }
 html {
@@ -27,6 +28,7 @@ html {
 body {
   font-family: var(--font-en);
   text-align: center;
+  background-color: var(--color-primary);
 }
 ::-webkit-scrollbar {
   width: 10px;
@@ -37,6 +39,10 @@ body {
 }
 ::-webkit-scrollbar-track {
   background: #000;
+}
+::selection {
+  background-color: var(--color-blue);
+  color: var(--color-primary);
 }
 /* .follow-cursor {
   position: absolute;
@@ -54,57 +60,47 @@ body {
   animation: spinner-y0fdc1 2s infinite ease;
   transform-style: preserve-3d;
   margin: 0 auto 1vw;
- }
- 
- .spinner > div {
+}
+.spinner>div {
   background-color: #000;
   height: 100%;
   position: absolute;
   width: 100%;
   border: 2px solid #fff;
- }
- 
- .spinner div:nth-of-type(1) {
+}
+.spinner div:nth-of-type(1) {
   transform: translateZ(-22px) rotateY(180deg);
- }
- 
- .spinner div:nth-of-type(2) {
+}
+.spinner div:nth-of-type(2) {
   transform: rotateY(-270deg) translateX(50%);
   transform-origin: top right;
- }
- 
- .spinner div:nth-of-type(3) {
+}
+.spinner div:nth-of-type(3) {
   transform: rotateY(270deg) translateX(-50%);
   transform-origin: center left;
- }
- 
- .spinner div:nth-of-type(4) {
+}
+.spinner div:nth-of-type(4) {
   transform: rotateX(90deg) translateY(-50%);
   transform-origin: top center;
- }
- 
- .spinner div:nth-of-type(5) {
+}
+.spinner div:nth-of-type(5) {
   transform: rotateX(-90deg) translateY(50%);
   transform-origin: bottom center;
- }
- 
- .spinner div:nth-of-type(6) {
+}
+.spinner div:nth-of-type(6) {
   transform: translateZ(22px);
- }
- 
- @keyframes spinner-y0fdc1 {
+}
+@keyframes spinner-y0fdc1 {
   0% {
-   transform: rotate(45deg) rotateX(-25deg) rotateY(25deg);
+    transform: rotate(45deg) rotateX(-25deg) rotateY(25deg);
   }
- 
   50% {
-   transform: rotate(45deg) rotateX(-385deg) rotateY(25deg);
+    transform: rotate(45deg) rotateX(-385deg) rotateY(25deg);
   }
- 
   100% {
-   transform: rotate(45deg) rotateX(-385deg) rotateY(385deg);
+    transform: rotate(45deg) rotateX(-385deg) rotateY(385deg);
   }
- }
+}
 
 /* header */
 header {
@@ -145,7 +141,6 @@ header .header-marquee .marquee-text {
   0% {
     transform: translateX(0)
   }
-
   100% {
     transform: translateX(-100%);
   }
@@ -157,7 +152,6 @@ header .header-marquee .marquee-text .circle {
   background-color: var(--color-blue);
   margin: 0.2vw 0.8vw;
 }
-
 header .gnb {
   display: flex;
   gap: 20px;
@@ -192,8 +186,6 @@ header .gnb li:hover a {
 .main .main-text span {
   position: relative;
 }
-
-
 .main .main-text span::before {
   content: "";
   background-color: var(--color-blue);
@@ -208,9 +200,6 @@ header .gnb li:hover a {
   transform-origin: right;
   animation: underline-animation2 3s infinite;
 }
-.main .main-text span.animated::before {
-  transform: scaleX(0);
-}
 .main .main-text span::after {
   content: "";
   background-color: var(--color-blue);
@@ -220,25 +209,33 @@ header .gnb li:hover a {
   bottom: 0;
   left: 0;
   right: 0;
-  
+
   transform: scaleX(0);
   transform-origin: left;
   animation: underline-animation 3s infinite;
 }
-.main .main-text span.animated::after{
-  transform: scaleX(1);
-}
 @keyframes underline-animation {
-  0% { transform: scaleX(0); }
-  50% { transform: scaleX(1); }
-  100% { transform: scaleX(0); }
+  0% {
+    transform: scaleX(0);
+  }
+  50% {
+    transform: scaleX(1);
+  }
+  100% {
+    transform: scaleX(0);
+  }
 }
 @keyframes underline-animation2 {
-  0% { transform: scaleX(0.8); }
-  50% { transform: scaleX(0); }
-  100% { transform: scaleX(1); }
+  0% {
+    transform: scaleX(0.8);
+  }
+  50% {
+    transform: scaleX(0);
+  }
+  100% {
+    transform: scaleX(1);
+  }
 }
-
 .bottom-text {
   display: flex;
   justify-content: space-between;
@@ -261,4 +258,3 @@ header .gnb li:hover a {
   z-index: -9;
 }
 */
-

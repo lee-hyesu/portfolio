@@ -1,0 +1,825 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charSet="utf-8" />
+  <meta name="viewport" content="width=device-width" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge" />
+  <meta name="robots" content="index,follow" />
+  <meta name="googlebot" content="index,follow" />
+
+  <link rel="icon" href="/favicon.ico" sizes="32x32" />
+  <link rel="icon" href="/icon.svg" type="image/svg+xml" />
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+  <meta name="theme-color" content="#000000" />
+  <link rel="manifest" href="/manifest.webmanifest" />
+  <meta name="referrer" content="no-referrer" />
+  <meta name="format-detection" content="telephone=no" />
+  <meta name="geo.region" content="US" />
+
+  <meta property="twitter:card" content="summary_large_image" />
+  <meta property="twitter:title" content="RRE" />
+  <meta property="twitter:description" content="RRE Ventures is a venture capital firm that is in it with founders when it matters" />
+  <meta property="twitter:image" content="https://assets.tina.io/ece9d4e6-5d1d-466d-b99b-15cdd7ab9b76/og.png" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="RRE" />
+  <meta property="og:description" content="RRE Ventures is a venture capital firm that is in it with founders when it matters" />
+  <meta property="og:url" content="Canonical link preview URL" />
+  <meta property="og:image" content="https://assets.tina.io/ece9d4e6-5d1d-466d-b99b-15cdd7ab9b76/og.png" />
+  <meta property="og:image:alt"
+    content="RRE, RRE Ventures is a venture capital firm that is in it with founders when it matters" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:locale" content="en_US" />
+  <title>RRE</title>
+  <meta name="description" content="RRE Ventures is a venture capital firm that is in it with founders when it matters" />
+  <meta name="next-head-count" content="28" />
+  <meta charSet="UTF-8" />
+  <link href="/fonts/at-hauss-mono/AtHaussMono-Medium.woff2" as="font" rel="preload prefetch" type="font/woff2" crossorigin="anonymous" />
+  <link href="/fonts/at-hauss-mono/AtHaussMono-Regular.woff2" as="font" rel="preload prefetch" type="font/woff2" crossorigin="anonymous" />
+  <link href="/fonts/family/Family-Bold.woff2" as="font" rel="preload prefetch" type="font/woff2"
+    crossorigin="anonymous" />
+  <link href="/fonts/family/Family-BoldItalic.woff2" as="font" rel="preload prefetch" type="font/woff2"
+    crossorigin="anonymous" />
+  <link href="/fonts/family/Family-Light.woff2" as="font" rel="preload prefetch" type="font/woff2"
+    crossorigin="anonymous" />
+  <link href="/fonts/family/Family-LightItalic.woff2" as="font" rel="preload prefetch" type="font/woff2"
+    crossorigin="anonymous" />
+  <link href="/fonts/family/Family-Medium.woff2" as="font" rel="preload prefetch" type="font/woff2"
+    crossorigin="anonymous" />
+  <link href="/fonts/family/Family-MediumItalic.woff2" as="font" rel="preload prefetch" type="font/woff2"
+    crossorigin="anonymous" />
+  <link href="/fonts/family/Family-Regular.woff2" as="font" rel="preload prefetch" type="font/woff2"
+    crossorigin="anonymous" />
+  <link href="/fonts/family/Family-RegularItalic.woff2" as="font" rel="preload prefetch" type="font/woff2" crossorigin="anonymous" />
+  <link rel="preload" href="/_next/static/css/9a96f39c39059d1c.css" as="style" crossorigin="" />
+  <link rel="stylesheet" href="/_next/static/css/9a96f39c39059d1c.css" crossorigin="" data-n-g="" />
+  <link rel="preload" href="/_next/static/css/f5ddded4e6f2b9d0.css" as="style" crossorigin="" />
+  <link rel="stylesheet" href="/_next/static/css/f5ddded4e6f2b9d0.css" crossorigin="" data-n-p="" />
+  <link rel="preload" href="/_next/static/css/2a68f65ca28ab180.css" as="style" crossorigin="" />
+  <link rel="stylesheet" href="/_next/static/css/2a68f65ca28ab180.css" crossorigin="" data-n-p="" /><noscript data-n-css=""></noscript>
+  <script defer="" crossorigin="" nomodule="" src="/_next/static/chunks/polyfills-c67a75d1b6f99dc8.js"></script>
+  <script data-partytown-config="">
+    partytown = {
+      lib: "/_next/static/~partytown/"
+    };
+  </script>
+  <script
+    data-partytown="">!(function (w, p, f, c) { if (!window.crossOriginIsolated && !navigator.serviceWorker) return; c = w[p] = w[p] || {}; c[f] = (c[f] || []) })(window, 'partytown', 'forward');/* Partytown 0.10.0 - MIT builder.io */
+      const t = { preserveBehavior: !1 }, e = e => { if ("string" == typeof e) return [e, t]; const [n, r = t] = e; return [n, { ...t, ...r }] }, n = Object.freeze((t => { const e = new Set; let n = []; do { Object.getOwnPropertyNames(n).forEach((t => { "function" == typeof n[t] && e.add(t) })) } while ((n = Object.getPrototypeOf(n)) !== Object.prototype); return Array.from(e) })()); !function (t, r, o, i, a, s, c, d, l, p, u = t, f) { function h() { f || (f = 1, "/" == (c = (s.lib || "/~partytown/") + (s.debug ? "debug/" : ""))[0] && (l = r.querySelectorAll('script[type="text/partytown"]'), i != t ? i.dispatchEvent(new CustomEvent("pt1", { detail: t })) : (d = setTimeout(v, 1e4), r.addEventListener("pt0", w), a ? y(1) : o.serviceWorker ? o.serviceWorker.register(c + (s.swPath || "partytown-sw.js"), { scope: c }).then((function (t) { t.active ? y() : t.installing && t.installing.addEventListener("statechange", (function (t) { "activated" == t.target.state && y() })) }), console.error) : v()))) } function y(t) { p = r.createElement(t ? "script" : "iframe"), t || (p.style.display = "block", p.style.width = "0", p.style.height = "0", p.style.border = "0", p.style.visibility = "hidden", p.setAttribute("aria-hidden", !0)), p.src = c + "partytown-" + (t ? "atomics.js?v=0.10.0" : "sandbox-sw.html?" + Date.now()), r.querySelector(s.sandboxParent || "body").appendChild(p) } function v(n, o) { for (w(), i == t && (s.forward || []).map((function (n) { const [r] = e(n); delete t[r.split(".")[0]] })), n = 0; n < l.length; n++)(o = r.createElement("script")).innerHTML = l[n].innerHTML, o.nonce = s.nonce, r.head.appendChild(o); p && p.parentNode.removeChild(p) } function w() { clearTimeout(d) } s = t.partytown || {}, i == t && (s.forward || []).map((function (r) { const [o, { preserveBehavior: i }] = e(r); u = t, o.split(".").map((function (e, r, o) { var a; u = u[o[r]] = r + 1 < o.length ? u[o[r]] || (a = o[r + 1], n.includes(a) ? [] : {}) : (() => { let e = null; if (i) { const { methodOrProperty: n, thisObject: r } = ((t, e) => { let n = t; for (let t = 0; t < e.length - 1; t += 1)n = n[e[t]]; return { thisObject: n, methodOrProperty: e.length > 0 ? n[e[e.length - 1]] : void 0 } })(t, o); "function" == typeof n && (e = (...t) => n.apply(r, ...t)) } return function () { let n; return e && (n = e(arguments)), (t._ptf = t._ptf || []).push(o, arguments), n } })() })) })), "complete" == r.readyState ? h() : (t.addEventListener("DOMContentLoaded", h), t.addEventListener("load", h)) }(window, document, navigator, top, window.crossOriginIsolated);</script>
+  <script src="https://www.googletagmanager.com/gtag/js?id=" async="" type="text/partytown" data-nscript="worker"
+    crossorigin=""></script>
+  <script id="gtm-base" type="text/partytown" data-nscript="worker" crossorigin="">window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', '');</script>
+  <script src="/_next/static/chunks/webpack-eb0b1d09fa4d7a4b.js" defer="" crossorigin=""></script>
+  <script src="/_next/static/chunks/framework-fda0a023b274c574.js" defer="" crossorigin=""></script>
+  <script src="/_next/static/chunks/main-61c5542187d7c941.js" defer="" crossorigin=""></script>
+  <script src="/_next/static/chunks/pages/_app-6dafc6a9d6ee13e4.js" defer="" crossorigin=""></script>
+  <script src="/_next/static/chunks/370-04467626d5c18d2d.js" defer="" crossorigin=""></script>
+  <script src="/_next/static/chunks/280-3cb7ac80cd090543.js" defer="" crossorigin=""></script>
+  <script src="/_next/static/chunks/pages/index-eefb91519a4d3c5b.js" defer="" crossorigin=""></script>
+  <script src="/_next/static/uLDReIDSSa0C3N_srq_yQ/_buildManifest.js" defer="" crossorigin=""></script>
+  <script src="/_next/static/uLDReIDSSa0C3N_srq_yQ/_ssgManifest.js" defer="" crossorigin=""></script>
+</head>
+
+<body>
+  <div id="__next">
+    <div class="curtain_curtain__zvWQR">
+      <div class="curtain_overlay__5cr7G"></div>
+      <div class="curtain_inner__eyyXU layout-grid">
+        <div class="curtain_cross1__R6wO6"><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M13 11h-2v2h2z" fill="black"></path>
+            <path d="M11 9H9v2h2z" fill="black"></path>
+            <path d="M11 13H9v2h2z" fill="black"></path>
+            <path d="M9 7H7v2h2z" fill="black"></path>
+            <path d="M9 15H7v2h2z" fill="black"></path>
+            <path d="M7 5H5v2h2z" fill="black"></path>
+            <path d="M19 5h-2v2h2z" fill="black"></path>
+            <path d="M7 17H5v2h2z" fill="black"></path>
+            <path d="M19 17h-2v2h2z" fill="black"></path>
+            <path d="M15 9h-2v2h2z" fill="black"></path>
+            <path d="M15 13h-2v2h2z" fill="black"></path>
+            <path d="M17 7h-2v2h2z" fill="black"></path>
+            <path d="M17 15h-2v2h2z" fill="black"></path>
+          </svg><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M13 11h-2v2h2z" fill="black"></path>
+            <path d="M11 9H9v2h2z" fill="black"></path>
+            <path d="M11 13H9v2h2z" fill="black"></path>
+            <path d="M9 7H7v2h2z" fill="black"></path>
+            <path d="M9 15H7v2h2z" fill="black"></path>
+            <path d="M7 5H5v2h2z" fill="black"></path>
+            <path d="M19 5h-2v2h2z" fill="black"></path>
+            <path d="M7 17H5v2h2z" fill="black"></path>
+            <path d="M19 17h-2v2h2z" fill="black"></path>
+            <path d="M15 9h-2v2h2z" fill="black"></path>
+            <path d="M15 13h-2v2h2z" fill="black"></path>
+            <path d="M17 7h-2v2h2z" fill="black"></path>
+            <path d="M17 15h-2v2h2z" fill="black"></path>
+          </svg></div>
+        <div class="curtain_cross2__6m1Hg"><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M13 11h-2v2h2z" fill="black"></path>
+            <path d="M11 9H9v2h2z" fill="black"></path>
+            <path d="M11 13H9v2h2z" fill="black"></path>
+            <path d="M9 7H7v2h2z" fill="black"></path>
+            <path d="M9 15H7v2h2z" fill="black"></path>
+            <path d="M7 5H5v2h2z" fill="black"></path>
+            <path d="M19 5h-2v2h2z" fill="black"></path>
+            <path d="M7 17H5v2h2z" fill="black"></path>
+            <path d="M19 17h-2v2h2z" fill="black"></path>
+            <path d="M15 9h-2v2h2z" fill="black"></path>
+            <path d="M15 13h-2v2h2z" fill="black"></path>
+            <path d="M17 7h-2v2h2z" fill="black"></path>
+            <path d="M17 15h-2v2h2z" fill="black"></path>
+          </svg></div>
+        <h2 class="curtain_title__Nxqe4 h3"><span>Home</span></h2>
+        <div class="curtain_cross3__lDPyC"><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M13 11h-2v2h2z" fill="black"></path>
+            <path d="M11 9H9v2h2z" fill="black"></path>
+            <path d="M11 13H9v2h2z" fill="black"></path>
+            <path d="M9 7H7v2h2z" fill="black"></path>
+            <path d="M9 15H7v2h2z" fill="black"></path>
+            <path d="M7 5H5v2h2z" fill="black"></path>
+            <path d="M19 5h-2v2h2z" fill="black"></path>
+            <path d="M7 17H5v2h2z" fill="black"></path>
+            <path d="M19 17h-2v2h2z" fill="black"></path>
+            <path d="M15 9h-2v2h2z" fill="black"></path>
+            <path d="M15 13h-2v2h2z" fill="black"></path>
+            <path d="M17 7h-2v2h2z" fill="black"></path>
+            <path d="M17 15h-2v2h2z" fill="black"></path>
+          </svg></div>
+        <div class="curtain_cross4__QdHv_"><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M13 11h-2v2h2z" fill="black"></path>
+            <path d="M11 9H9v2h2z" fill="black"></path>
+            <path d="M11 13H9v2h2z" fill="black"></path>
+            <path d="M9 7H7v2h2z" fill="black"></path>
+            <path d="M9 15H7v2h2z" fill="black"></path>
+            <path d="M7 5H5v2h2z" fill="black"></path>
+            <path d="M19 5h-2v2h2z" fill="black"></path>
+            <path d="M7 17H5v2h2z" fill="black"></path>
+            <path d="M19 17h-2v2h2z" fill="black"></path>
+            <path d="M15 9h-2v2h2z" fill="black"></path>
+            <path d="M15 13h-2v2h2z" fill="black"></path>
+            <path d="M17 7h-2v2h2z" fill="black"></path>
+            <path d="M17 15h-2v2h2z" fill="black"></path>
+          </svg><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M13 11h-2v2h2z" fill="black"></path>
+            <path d="M11 9H9v2h2z" fill="black"></path>
+            <path d="M11 13H9v2h2z" fill="black"></path>
+            <path d="M9 7H7v2h2z" fill="black"></path>
+            <path d="M9 15H7v2h2z" fill="black"></path>
+            <path d="M7 5H5v2h2z" fill="black"></path>
+            <path d="M19 5h-2v2h2z" fill="black"></path>
+            <path d="M7 17H5v2h2z" fill="black"></path>
+            <path d="M19 17h-2v2h2z" fill="black"></path>
+            <path d="M15 9h-2v2h2z" fill="black"></path>
+            <path d="M15 13h-2v2h2z" fill="black"></path>
+            <path d="M17 7h-2v2h2z" fill="black"></path>
+            <path d="M17 15h-2v2h2z" fill="black"></path>
+          </svg><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M13 11h-2v2h2z" fill="black"></path>
+            <path d="M11 9H9v2h2z" fill="black"></path>
+            <path d="M11 13H9v2h2z" fill="black"></path>
+            <path d="M9 7H7v2h2z" fill="black"></path>
+            <path d="M9 15H7v2h2z" fill="black"></path>
+            <path d="M7 5H5v2h2z" fill="black"></path>
+            <path d="M19 5h-2v2h2z" fill="black"></path>
+            <path d="M7 17H5v2h2z" fill="black"></path>
+            <path d="M19 17h-2v2h2z" fill="black"></path>
+            <path d="M15 9h-2v2h2z" fill="black"></path>
+            <path d="M15 13h-2v2h2z" fill="black"></path>
+            <path d="M17 7h-2v2h2z" fill="black"></path>
+            <path d="M17 15h-2v2h2z" fill="black"></path>
+          </svg><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M13 11h-2v2h2z" fill="black"></path>
+            <path d="M11 9H9v2h2z" fill="black"></path>
+            <path d="M11 13H9v2h2z" fill="black"></path>
+            <path d="M9 7H7v2h2z" fill="black"></path>
+            <path d="M9 15H7v2h2z" fill="black"></path>
+            <path d="M7 5H5v2h2z" fill="black"></path>
+            <path d="M19 5h-2v2h2z" fill="black"></path>
+            <path d="M7 17H5v2h2z" fill="black"></path>
+            <path d="M19 17h-2v2h2z" fill="black"></path>
+            <path d="M15 9h-2v2h2z" fill="black"></path>
+            <path d="M15 13h-2v2h2z" fill="black"></path>
+            <path d="M17 7h-2v2h2z" fill="black"></path>
+            <path d="M17 15h-2v2h2z" fill="black"></path>
+          </svg></div>
+      </div>
+    </div>
+    <div class="theme-light layout_layout__yd6mS home_page___kTjr home">
+      <div class="canvas_canvas__8dKkj"></div>
+      <div class="layout_stainWrapper__vzwpl">
+        <div class="layout_stain__Cp8P8"></div>
+      </div>
+      <header class="header_header__pwrbs" data-tina-field="">
+        <div class="navigation_navigation__IldGv navigation_closed__yWGTA">
+          <div class="canvas_canvas__8dKkj navigation_canvas__FdmvD"></div>
+          <div class="navigation_stain__uJhm6"></div>
+          <div class="navigation_scroller__Or_RY">
+            <div>
+              <div class="navigation_content__04O4b layout-grid-inner">
+                <div class="navigation_nav__AJRWQ">
+                  <ul class="navigation_list__l1Bf6 h3">
+                    <li class="navigation_item__d_hmq navigation_hoverable__m6hw6">
+                      <div>
+                        <div class="navigation_link__LzKw6"><span class="link_text__Pj7S_">Home</span><span
+                            class="navigation_icon__Vh8sj"><img alt="hand icon svg" loading="eager" decoding="async"
+                              data-nimg="fill"
+                              style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;object-fit:cover;color:transparent"
+                              src="https://assets.tina.io/ece9d4e6-5d1d-466d-b99b-15cdd7ab9b76/assets/hand2.svg" /></span>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="navigation_item__d_hmq navigation_hoverable__m6hw6">
+                      <div><a class="navigation_link__LzKw6" href="/team"><span
+                            class="link_text__Pj7S_">Team</span><span class="navigation_icon__Vh8sj"><img
+                              alt="pizza svg" loading="eager" decoding="async" data-nimg="fill"
+                              style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;object-fit:cover;color:transparent"
+                              src="https://assets.tina.io/ece9d4e6-5d1d-466d-b99b-15cdd7ab9b76/assets/pizza2.svg" /></span></a>
+                      </div>
+                    </li>
+                    <li class="navigation_item__d_hmq navigation_hoverable__m6hw6">
+                      <div><a class="navigation_link__LzKw6" href="/portfolio"><span
+                            class="link_text__Pj7S_">Portfolio</span><span class="navigation_icon__Vh8sj"><img
+                              alt="folder icon svg" loading="eager" decoding="async" data-nimg="fill"
+                              style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;object-fit:cover;color:transparent"
+                              src="https://assets.tina.io/ece9d4e6-5d1d-466d-b99b-15cdd7ab9b76/assets/folder2.svg" /></span></a>
+                      </div>
+                    </li>
+                    <li class="navigation_item__d_hmq navigation_hoverable__m6hw6">
+                      <div><a class="navigation_link__LzKw6" href="/about"><span
+                            class="link_text__Pj7S_">About</span><span class="navigation_icon__Vh8sj"><img
+                              alt="book icon svg" loading="eager" decoding="async" data-nimg="fill"
+                              style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;object-fit:cover;color:transparent"
+                              src="https://assets.tina.io/ece9d4e6-5d1d-466d-b99b-15cdd7ab9b76/assets/book2.svg" /></span></a>
+                      </div>
+                    </li>
+                    <li class="navigation_item__d_hmq navigation_hoverable__m6hw6">
+                      <div><a class="navigation_link__LzKw6" href="/focuses"><span
+                            class="link_text__Pj7S_">Focuses</span><span class="navigation_icon__Vh8sj"><img
+                              alt="camera icon svg" loading="eager" decoding="async" data-nimg="fill"
+                              style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;object-fit:cover;color:transparent"
+                              src="https://assets.tina.io/ece9d4e6-5d1d-466d-b99b-15cdd7ab9b76/assets/camera2.svg" /></span></a>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+                <aside class="navigation_right__AvSVI">
+                  <div class="subscribe_subscribe__PrT6F navigation_subscribe__NTtDQ">
+                    <h3 class="subscribe_title__dMMuR p-xl text-light ">Subscribe</h3>
+                    <p class="subscribe_text__IEQJG p"><span>Sign up with your email address to receive news and
+                        updates.</span></p>
+                    <form>
+                      <div class="subscribe_input__KnKNf cta"><input name="EMAIL" type="email"
+                          placeholder="Your Email Address" /><button class="subscribe_submit__7pZTV"
+                          type="submit"></button></div>
+                    </form>
+                  </div>
+                  <div class="navigation_bottom__D6QxZ">
+                    <div>
+                      <ul class="navigation_list__l1Bf6 p-s text-medium">
+                        <li class="navigation_item__d_hmq"><a target="_blank" rel="noopener noreferrer"
+                            class="navigation_link__LzKw6" href="https://twitter.com/RRE"><span
+                              class="link_text__Pj7S_">X</span></a></li>
+                        <li class="navigation_item__d_hmq"><a target="_blank" rel="noopener noreferrer"
+                            class="navigation_link__LzKw6" href="https://www.linkedin.com/company/rre-ventures/"><span
+                              class="link_text__Pj7S_">linkedin</span></a></li>
+                      </ul>
+                    </div>
+                    <div>
+                      <ul class="navigation_list__l1Bf6 p-s text-medium">
+                        <li class="navigation_item__d_hmq"><a target="_blank" rel="noopener noreferrer"
+                            class="navigation_link__LzKw6" href="https://rre.medium.com/"><span
+                              class="link_text__Pj7S_">blog</span></a></li>
+                        <li class="navigation_item__d_hmq"><a target="_blank" rel="noopener noreferrer"
+                            class="navigation_link__LzKw6" href="https://rre.com/rrepov"><span
+                              class="link_text__Pj7S_">RRE POV</span></a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </aside>
+              </div>
+              <div class="navigation_footer__JYC_o">
+                <div class="navigation_mobile__PoRXw">
+                  <div class="navigation_info__NdQOx p-s">
+                    <p>130 E 59TH ST<!-- --> <br /> <!-- -->NEW YORK, NY</p>
+                    <div>
+                      <p>5355 Town Center Rd<!-- --> <br /> <!-- -->BOCA RATON, FL</p><br /><a target="_blank"
+                        rel="noopener noreferrer" href="mailto:info@rre.com"><span
+                          class="link_text__Pj7S_">INFO@RRE.COM</span></a>
+                    </div>
+                  </div>
+                  <div class="navigation_ctas__nBCBp"><button
+                      class="button_button__dZRSb navigation_subscribe__NTtDQ cta"><svg viewBox="0 0 24 24" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <rect width="24" height="24" fill="none"></rect>
+                        <path d="M13 13h-2v2h2z" fill="black"></path>
+                        <path d="M11 13H9v2h2z" fill="black"></path>
+                        <path d="M9 11H7v2h2z" fill="black"></path>
+                        <path d="M7 9H5v2h2z" fill="black"></path>
+                        <path d="M19 5H5v2h14z" fill="black"></path>
+                        <path d="M19 19H5v2h14z" fill="black"></path>
+                        <path d="M5 7H3v12h2z" fill="black"></path>
+                        <path d="M21 7h-2v12h2z" fill="black"></path>
+                        <path d="M19 9h-2v2h2z" fill="black"></path>
+                        <path d="M15 13h-2v2h2z" fill="black"></path>
+                        <path d="M17 11h-2v2h2z" fill="black"></path>
+                      </svg><span class="link_text__Pj7S_">subscribe</span></button><button
+                      class="button_button__dZRSb button_black__9ONet navigation_close__KYyVP cta button_black__9ONet"><svg
+                        viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M13 11h-2v2h2z" fill="black"></path>
+                        <path d="M11 9H9v2h2z" fill="black"></path>
+                        <path d="M11 13H9v2h2z" fill="black"></path>
+                        <path d="M9 7H7v2h2z" fill="black"></path>
+                        <path d="M9 15H7v2h2z" fill="black"></path>
+                        <path d="M7 5H5v2h2z" fill="black"></path>
+                        <path d="M19 5h-2v2h2z" fill="black"></path>
+                        <path d="M7 17H5v2h2z" fill="black"></path>
+                        <path d="M19 17h-2v2h2z" fill="black"></path>
+                        <path d="M15 9h-2v2h2z" fill="black"></path>
+                        <path d="M15 13h-2v2h2z" fill="black"></path>
+                        <path d="M17 7h-2v2h2z" fill="black"></path>
+                        <path d="M17 15h-2v2h2z" fill="black"></path>
+                      </svg><span class="link_text__Pj7S_">close</span></button></div>
+                </div>
+                <footer class="footer_footer__3kcQj navigation_desktop__TPIvD footer_minimal__6CGaT" data-tina-field="">
+                  <div class="footer_bottom__FFkQv layout-grid p-s text-regular">
+                    <div class="footer_item__dAiCz">
+                      <p>130 E 59TH ST<!-- --> <br /> <!-- -->NEW YORK, NY</p>
+                    </div>
+                    <div class="footer_item__dAiCz">
+                      <p>5355 Town Center Rd<!-- --> <br /> <!-- -->BOCA RATON, FL</p>
+                    </div>
+                    <div class="footer_item__dAiCz"><a target="_blank" rel="noopener noreferrer"
+                        class="footer_link__pjK7O link" href="mailto:info@rre.com"><span
+                          class="link_text__Pj7S_">INFO@RRE.COM</span></a></div><a target="_blank"
+                      rel="noopener noreferrer" class="button_button__dZRSb footer_cta__CkaHZ small-cta"
+                      href="https://rre.altareturn.com/"><svg viewBox="0 0 8 10" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <rect y="4" width="7" height="5" fill="black"></rect>
+                        <rect x="1" y="1" width="1" height="4" fill="black"></rect>
+                        <rect x="2" width="3" height="1" fill="black"></rect>
+                        <rect x="1" y="8" width="5" height="2" fill="black"></rect>
+                        <rect x="5" y="1" width="1" height="4" fill="black"></rect>
+                      </svg><span class="link_text__Pj7S_"> </span><span class="link_text__Pj7S_">Limited Partner
+                        Login</span></a>
+                  </div>
+                </footer>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal_modal__Vgg0f modal_closed__dAQAJ">
+          <div>
+            <div class="modal_content__wLLdW"><button class="modal_close__xfj8a"><svg viewBox="0 0 24 24" fill="none"
+                  xmlns="http://www.w3.org/2000/svg" class="modal_icon__9_zTL">
+                  <path d="M13 11h-2v2h2z" fill="black"></path>
+                  <path d="M11 9H9v2h2z" fill="black"></path>
+                  <path d="M11 13H9v2h2z" fill="black"></path>
+                  <path d="M9 7H7v2h2z" fill="black"></path>
+                  <path d="M9 15H7v2h2z" fill="black"></path>
+                  <path d="M7 5H5v2h2z" fill="black"></path>
+                  <path d="M19 5h-2v2h2z" fill="black"></path>
+                  <path d="M7 17H5v2h2z" fill="black"></path>
+                  <path d="M19 17h-2v2h2z" fill="black"></path>
+                  <path d="M15 9h-2v2h2z" fill="black"></path>
+                  <path d="M15 13h-2v2h2z" fill="black"></path>
+                  <path d="M17 7h-2v2h2z" fill="black"></path>
+                  <path d="M17 15h-2v2h2z" fill="black"></path>
+                </svg></button>
+              <p class="p-xl modal_title__S3sor">Subscribe</p>
+              <p class="p modal_description__h6DQa">SIGN UP WITH YOUR EMAIL ADDRESS TO RECEIVE NEWS AND UPDATES.</p>
+              <div class="subscribe_subscribe__PrT6F">
+                <form>
+                  <div class="subscribe_input__KnKNf cta"><input name="EMAIL" type="email"
+                      placeholder="your email address" /><button class="subscribe_submit__7pZTV" type="submit"></button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="search_search__sl_V5 search_closed__e4t1Q">
+          <div>
+            <div class="search_content__1zyrz layout-block">
+              <div class="search_cross1__o4jM_"><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M13 11h-2v2h2z" fill="black"></path>
+                  <path d="M11 9H9v2h2z" fill="black"></path>
+                  <path d="M11 13H9v2h2z" fill="black"></path>
+                  <path d="M9 7H7v2h2z" fill="black"></path>
+                  <path d="M9 15H7v2h2z" fill="black"></path>
+                  <path d="M7 5H5v2h2z" fill="black"></path>
+                  <path d="M19 5h-2v2h2z" fill="black"></path>
+                  <path d="M7 17H5v2h2z" fill="black"></path>
+                  <path d="M19 17h-2v2h2z" fill="black"></path>
+                  <path d="M15 9h-2v2h2z" fill="black"></path>
+                  <path d="M15 13h-2v2h2z" fill="black"></path>
+                  <path d="M17 7h-2v2h2z" fill="black"></path>
+                  <path d="M17 15h-2v2h2z" fill="black"></path>
+                </svg></div>
+              <div class="search_cross2__5RV_w"><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M13 11h-2v2h2z" fill="black"></path>
+                  <path d="M11 9H9v2h2z" fill="black"></path>
+                  <path d="M11 13H9v2h2z" fill="black"></path>
+                  <path d="M9 7H7v2h2z" fill="black"></path>
+                  <path d="M9 15H7v2h2z" fill="black"></path>
+                  <path d="M7 5H5v2h2z" fill="black"></path>
+                  <path d="M19 5h-2v2h2z" fill="black"></path>
+                  <path d="M7 17H5v2h2z" fill="black"></path>
+                  <path d="M19 17h-2v2h2z" fill="black"></path>
+                  <path d="M15 9h-2v2h2z" fill="black"></path>
+                  <path d="M15 13h-2v2h2z" fill="black"></path>
+                  <path d="M17 7h-2v2h2z" fill="black"></path>
+                  <path d="M17 15h-2v2h2z" fill="black"></path>
+                </svg><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M13 11h-2v2h2z" fill="black"></path>
+                  <path d="M11 9H9v2h2z" fill="black"></path>
+                  <path d="M11 13H9v2h2z" fill="black"></path>
+                  <path d="M9 7H7v2h2z" fill="black"></path>
+                  <path d="M9 15H7v2h2z" fill="black"></path>
+                  <path d="M7 5H5v2h2z" fill="black"></path>
+                  <path d="M19 5h-2v2h2z" fill="black"></path>
+                  <path d="M7 17H5v2h2z" fill="black"></path>
+                  <path d="M19 17h-2v2h2z" fill="black"></path>
+                  <path d="M15 9h-2v2h2z" fill="black"></path>
+                  <path d="M15 13h-2v2h2z" fill="black"></path>
+                  <path d="M17 7h-2v2h2z" fill="black"></path>
+                  <path d="M17 15h-2v2h2z" fill="black"></path>
+                </svg></div>
+              <div class="search_cross3__tFRKz"><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M13 11h-2v2h2z" fill="black"></path>
+                  <path d="M11 9H9v2h2z" fill="black"></path>
+                  <path d="M11 13H9v2h2z" fill="black"></path>
+                  <path d="M9 7H7v2h2z" fill="black"></path>
+                  <path d="M9 15H7v2h2z" fill="black"></path>
+                  <path d="M7 5H5v2h2z" fill="black"></path>
+                  <path d="M19 5h-2v2h2z" fill="black"></path>
+                  <path d="M7 17H5v2h2z" fill="black"></path>
+                  <path d="M19 17h-2v2h2z" fill="black"></path>
+                  <path d="M15 9h-2v2h2z" fill="black"></path>
+                  <path d="M15 13h-2v2h2z" fill="black"></path>
+                  <path d="M17 7h-2v2h2z" fill="black"></path>
+                  <path d="M17 15h-2v2h2z" fill="black"></path>
+                </svg><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M13 11h-2v2h2z" fill="black"></path>
+                  <path d="M11 9H9v2h2z" fill="black"></path>
+                  <path d="M11 13H9v2h2z" fill="black"></path>
+                  <path d="M9 7H7v2h2z" fill="black"></path>
+                  <path d="M9 15H7v2h2z" fill="black"></path>
+                  <path d="M7 5H5v2h2z" fill="black"></path>
+                  <path d="M19 5h-2v2h2z" fill="black"></path>
+                  <path d="M7 17H5v2h2z" fill="black"></path>
+                  <path d="M19 17h-2v2h2z" fill="black"></path>
+                  <path d="M15 9h-2v2h2z" fill="black"></path>
+                  <path d="M15 13h-2v2h2z" fill="black"></path>
+                  <path d="M17 7h-2v2h2z" fill="black"></path>
+                  <path d="M17 15h-2v2h2z" fill="black"></path>
+                </svg><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M13 11h-2v2h2z" fill="black"></path>
+                  <path d="M11 9H9v2h2z" fill="black"></path>
+                  <path d="M11 13H9v2h2z" fill="black"></path>
+                  <path d="M9 7H7v2h2z" fill="black"></path>
+                  <path d="M9 15H7v2h2z" fill="black"></path>
+                  <path d="M7 5H5v2h2z" fill="black"></path>
+                  <path d="M19 5h-2v2h2z" fill="black"></path>
+                  <path d="M7 17H5v2h2z" fill="black"></path>
+                  <path d="M19 17h-2v2h2z" fill="black"></path>
+                  <path d="M15 9h-2v2h2z" fill="black"></path>
+                  <path d="M15 13h-2v2h2z" fill="black"></path>
+                  <path d="M17 7h-2v2h2z" fill="black"></path>
+                  <path d="M17 15h-2v2h2z" fill="black"></path>
+                </svg><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M13 11h-2v2h2z" fill="black"></path>
+                  <path d="M11 9H9v2h2z" fill="black"></path>
+                  <path d="M11 13H9v2h2z" fill="black"></path>
+                  <path d="M9 7H7v2h2z" fill="black"></path>
+                  <path d="M9 15H7v2h2z" fill="black"></path>
+                  <path d="M7 5H5v2h2z" fill="black"></path>
+                  <path d="M19 5h-2v2h2z" fill="black"></path>
+                  <path d="M7 17H5v2h2z" fill="black"></path>
+                  <path d="M19 17h-2v2h2z" fill="black"></path>
+                  <path d="M15 9h-2v2h2z" fill="black"></path>
+                  <path d="M15 13h-2v2h2z" fill="black"></path>
+                  <path d="M17 7h-2v2h2z" fill="black"></path>
+                  <path d="M17 15h-2v2h2z" fill="black"></path>
+                </svg></div>
+              <div class="search_search-input__le86F"><label for="query" class="search_input-label__NjVgs"><span
+                    class="search_label__DAWqM h2">What are you looking for?</span></label><input id="query" type="text"
+                  autofocus="" class="search_input-field__8QgZq h2" /></div>
+              <div class="search_results-screen__epXGu">
+                <div class="search_search-title__rAEH6">
+                  <p class="search_pretitle__88i9M p-s">Search Results</p>
+                  <h2 class="search_title__EfbCl h2"><span class="search_count__LfKdw p-s">0</span></h2>
+                </div>
+                <div class="layout-grid search_results__nlbAS"></div>
+                <div class="search_no-results__CcxrP search_show__Jkold">
+                  <p class="p-l">Sorry, we could not find any results for your search.</p><button
+                    class="link underlined uppercase p-s">Search again</button>
+                </div>
+              </div>
+              <div class="search_recently__1MdRf"></div>
+            </div>
+          </div>
+        </div>
+        <div class="layout-grid-inner header_head__1IIxT"><a arial-label="Logo Link to Home Page"
+            class="header_logo__AqbZa" href="/"><svg viewBox="0 0 97 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M3.4 0H0v40h10.4V10.4H43V0z" fill="#DEDFDF"></path>
+              <path d="M96.6 0H50.2v10.4h46.4z" fill="#DEDFDF"></path>
+              <path d="M96.6 14.8H50.2v10.4h46.4z" fill="#DEDFDF"></path>
+              <path d="M96.6 29.6H50.2V40h46.4z" fill="#DEDFDF"></path>
+              <path d="M15.2 29.5V40h10.3V25.2h17.6V14.8h-28z" fill="#DEDFDF"></path>
+            </svg></a><a class="header_marquee__BDaae header_with-cta__9msuW" href="/rrepov">
+            <div class="header_text__IZv0q marquee_marquee__uh6UM"
+              style="--duration:50s;--offset:0%;--animation-status:paused">
+              <div class="marquee_inner__qrUzS" aria-hidden="false">
+                <p class="p">Check out the latest RRE POV podcast: Misinformation in the Age of GenAI<span
+                    class="header_separator__97NPC"></span></p>
+              </div>
+              <div class="marquee_inner__qrUzS" aria-hidden="true" data-nosnippet="">
+                <p class="p">Check out the latest RRE POV podcast: Misinformation in the Age of GenAI<span
+                    class="header_separator__97NPC"></span></p>
+              </div>
+              <div class="marquee_inner__qrUzS" aria-hidden="true" data-nosnippet="">
+                <p class="p">Check out the latest RRE POV podcast: Misinformation in the Age of GenAI<span
+                    class="header_separator__97NPC"></span></p>
+              </div>
+              <div class="marquee_inner__qrUzS" aria-hidden="true" data-nosnippet="">
+                <p class="p">Check out the latest RRE POV podcast: Misinformation in the Age of GenAI<span
+                    class="header_separator__97NPC"></span></p>
+              </div>
+              <div class="marquee_inner__qrUzS" aria-hidden="true" data-nosnippet="">
+                <p class="p">Check out the latest RRE POV podcast: Misinformation in the Age of GenAI<span
+                    class="header_separator__97NPC"></span></p>
+              </div>
+            </div><button class="header_cta__ROhMQ"><svg viewBox="0 0 24 24" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path d="M11 13h2v-2h-2z" fill="black"></path>
+                <path d="M9 15h2v-2H9z" fill="black"></path>
+                <path d="M7 17h2v-2H7z" fill="black"></path>
+                <path d="M5 19h2v-2H5z" fill="black"></path>
+                <path d="M13 11h2V9h-2z" fill="black"></path>
+                <path d="M15 9h2V7h-2z" fill="black"></path>
+                <path d="M17 19h2V5h-2z" fill="black"></path>
+                <path d="M17 7H5V5h12z" fill="black"></path>
+              </svg></button>
+          </a>
+          <div class="header_ctas___CjXP"><button
+              class="button_button__dZRSb button_black__9ONet menu-button_menu-button__ibZGa header_hamburger__0y19Y cta button_black__9ONet"><svg
+                fill="none" viewBox="0 0 24 24">
+                <path fill="white"
+                  d="M19 5H9v2h10V5ZM7 5H5v2h2V5Zm0 12H5v2h2v-2Zm0-6H5v2h2v-2Zm12 6H9v2h10v-2Zm0-6H9v2h10v-2Z"></path>
+                <path fill="none"
+                  d="M13 11h-2v2h2v-2Zm-2-2H9v2h2V9Zm0 4H9v2h2v-2ZM9 7H7v2h2V7Zm0 8H7v2h2v-2ZM7 5H5v2h2V5Zm12 0h-2v2h2V5ZM7 17H5v2h2v-2Zm12 0h-2v2h2v-2Zm-4-8h-2v2h2V9Zm0 4h-2v2h2v-2Zm2-6h-2v2h2V7Zm0 8h-2v2h2v-2Z">
+                </path>
+              </svg><span class="link_text__Pj7S_">menu</span></button><a target="_blank" rel="noopener noreferrer"
+              class="button_button__dZRSb header_partner-login__X_TGB small-cta"
+              href="https://rre.altareturn.com/"><span class="header_icon__yLksv"><svg viewBox="0 0 8 10" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <rect y="4" width="7" height="5" fill="black"></rect>
+                  <rect x="1" y="1" width="1" height="4" fill="black"></rect>
+                  <rect x="2" width="3" height="1" fill="black"></rect>
+                  <rect x="1" y="8" width="5" height="2" fill="black"></rect>
+                  <rect x="5" y="1" width="1" height="4" fill="black"></rect>
+                </svg></span>
+              <p><span><span class="header_text__IZv0q">Partner login</span></span></p>
+            </a><button class="button_button__dZRSb header_search-again__f5WBf"><svg fill="none" viewBox="0 0 24 24">
+                <path fill="black"
+                  d="M14 3H8v2h6V3Zm0 12H8v2h6v-2ZM8 5H6v2h2V5Zm8 0h-2v2h2V5Zm-8 8H6v2h2v-2Zm8 0h-2v2h2v-2Zm2 2h-2v2h2v-2Zm2 2h-2v2h2v-2Zm2 2h-2v2h2v-2ZM6 7H4v6h2V7Zm12 0h-2v6h2V7Z">
+                </path>
+                <path fill="none"
+                  d="M13 11h-2v2h2v-2Zm-2-2H9v2h2V9Zm0 4H9v2h2v-2ZM9 7H7v2h2V7Zm0 8H7v2h2v-2ZM7 5H5v2h2V5Zm12 0h-2v2h2V5ZM7 17H5v2h2v-2Zm12 0h-2v2h2v-2Zm-4-8h-2v2h2V9Zm0 4h-2v2h2v-2Zm2-6h-2v2h2V7Zm0 8h-2v2h2v-2Z">
+                </path>
+              </svg></button><button class="button_button__dZRSb header_search__hhx4j"><svg fill="none"
+                viewBox="0 0 24 24">
+                <path fill="black"
+                  d="M14 3H8v2h6V3Zm0 12H8v2h6v-2ZM8 5H6v2h2V5Zm8 0h-2v2h2V5Zm-8 8H6v2h2v-2Zm8 0h-2v2h2v-2Zm2 2h-2v2h2v-2Zm2 2h-2v2h2v-2Zm2 2h-2v2h2v-2ZM6 7H4v6h2V7Zm12 0h-2v6h2V7Z">
+                </path>
+                <path fill="none"
+                  d="M13 11h-2v2h2v-2Zm-2-2H9v2h2V9Zm0 4H9v2h2v-2ZM9 7H7v2h2V7Zm0 8H7v2h2v-2ZM7 5H5v2h2V5Zm12 0h-2v2h2V5ZM7 17H5v2h2v-2Zm12 0h-2v2h2v-2Zm-4-8h-2v2h2V9Zm0 4h-2v2h2v-2Zm2-6h-2v2h2V7Zm0 8h-2v2h2v-2Z">
+                </path>
+              </svg></button></div>
+        </div>
+      </header>
+      <div class="header_mobileMarquee__VlBuh"><a class="header_marquee__BDaae" href="/rrepov">
+          <div class="header_text__IZv0q marquee_marquee__uh6UM"
+            style="--duration:50s;--offset:0%;--animation-status:paused">
+            <div class="marquee_inner__qrUzS" aria-hidden="false">
+              <p class="p">Check out the latest RRE POV podcast: Misinformation in the Age of GenAI<span
+                  class="header_separator__97NPC"></span></p>
+            </div>
+            <div class="marquee_inner__qrUzS" aria-hidden="true" data-nosnippet="">
+              <p class="p">Check out the latest RRE POV podcast: Misinformation in the Age of GenAI<span
+                  class="header_separator__97NPC"></span></p>
+            </div>
+            <div class="marquee_inner__qrUzS" aria-hidden="true" data-nosnippet="">
+              <p class="p">Check out the latest RRE POV podcast: Misinformation in the Age of GenAI<span
+                  class="header_separator__97NPC"></span></p>
+            </div>
+            <div class="marquee_inner__qrUzS" aria-hidden="true" data-nosnippet="">
+              <p class="p">Check out the latest RRE POV podcast: Misinformation in the Age of GenAI<span
+                  class="header_separator__97NPC"></span></p>
+            </div>
+            <div class="marquee_inner__qrUzS" aria-hidden="true" data-nosnippet="">
+              <p class="p">Check out the latest RRE POV podcast: Misinformation in the Age of GenAI<span
+                  class="header_separator__97NPC"></span></p>
+            </div>
+          </div>
+        </a><button
+          class="button_button__dZRSb button_black__9ONet menu-button_menu-button__ibZGa cta button_black__9ONet"><svg
+            fill="none" viewBox="0 0 24 24">
+            <path fill="white"
+              d="M19 5H9v2h10V5ZM7 5H5v2h2V5Zm0 12H5v2h2v-2Zm0-6H5v2h2v-2Zm12 6H9v2h10v-2Zm0-6H9v2h10v-2Z"></path>
+            <path fill="none"
+              d="M13 11h-2v2h2v-2Zm-2-2H9v2h2V9Zm0 4H9v2h2v-2ZM9 7H7v2h2V7Zm0 8H7v2h2v-2ZM7 5H5v2h2V5Zm12 0h-2v2h2V5ZM7 17H5v2h2v-2Zm12 0h-2v2h2v-2Zm-4-8h-2v2h2V9Zm0 4h-2v2h2v-2Zm2-6h-2v2h2V7Zm0 8h-2v2h2v-2Z">
+            </path>
+          </svg><span class="link_text__Pj7S_">menu</span></button></div>
+      <main class="layout_main__k8zJI">
+        <section class="home_hero__TJz4n">
+          <h1 class="home_title__Ddv9x h2 desktop-only" data-tina-field=""><span id="line-0"><span
+                class="home_line__PgW7F"><span class="home_line__PgW7F"><a id="match-word-0"
+                    class="home_link__g_vWd home_word__rL8o2 home_space__6WB_H" href="/team"><span
+                      class="link_text__Pj7S_">We</span></a><span
+                    class="home_word__rL8o2 home_space__6WB_H">back</span><span
+                    class="home_word__rL8o2 home_space__6WB_H">the</span><a id="match-word-1"
+                    class="home_link__g_vWd home_word__rL8o2" href="/portfolio"><span
+                      class="link_text__Pj7S_">best</span></a></span></span><br /></span><span id="line-1"><span
+                class="home_line__PgW7F"><span class="home_line__PgW7F"><span
+                    class="home_word__rL8o2 home_space__6WB_H">for</span><span
+                    class="home_word__rL8o2 home_space__6WB_H">the</span><a id="match-word-2"
+                    class="home_link__g_vWd home_word__rL8o2" href="/about"><span
+                      class="link_text__Pj7S_">distance</span></a><span
+                    class="home_word__rL8o2">.</span></span></span><br /></span></h1>
+          <h1 class="home_title__Ddv9x h2 mobile-only" data-tina-field=""><span id="line-0"><span
+                class="home_line__PgW7F"><span class="home_line__PgW7F"><a id="match-word-0"
+                    class="home_link__g_vWd home_word__rL8o2 home_space__6WB_H" href="/team"><span
+                      class="link_text__Pj7S_">We</span></a><span
+                    class="home_word__rL8o2 home_space__6WB_H">back</span><span
+                    class="home_word__rL8o2">the</span></span></span><br /></span><span id="line-1"><span
+                class="home_line__PgW7F"><span class="home_line__PgW7F"><a id="match-word-1"
+                    class="home_link__g_vWd home_word__rL8o2 home_space__6WB_H" href="/portfolio"><span
+                      class="link_text__Pj7S_">best</span></a><span
+                    class="home_word__rL8o2 home_space__6WB_H">for</span><span
+                    class="home_word__rL8o2">the</span></span></span><br /></span><span id="line-2"><span
+                class="home_line__PgW7F"><span class="home_line__PgW7F"><a id="match-word-2"
+                    class="home_link__g_vWd home_word__rL8o2" href="/about"><span
+                      class="link_text__Pj7S_">distance</span></a><span
+                    class="home_word__rL8o2">.</span></span></span><br /></span></h1>
+        </section>
+      </main>
+      <footer class="footer_footer__3kcQj footer_minimal__6CGaT" data-tina-field="">
+        <div class="footer_bottom__FFkQv layout-grid p-s text-regular">
+          <div class="footer_item__dAiCz">
+            <p>130 E 59TH ST<!-- --> <br /> <!-- -->NEW YORK, NY</p>
+          </div>
+          <div class="footer_item__dAiCz">
+            <p>5355 Town Center Rd<!-- --> <br /> <!-- -->BOCA RATON, FL</p>
+          </div>
+          <div class="footer_item__dAiCz"><a target="_blank" rel="noopener noreferrer" class="footer_link__pjK7O link"
+              href="mailto:info@rre.com"><span class="link_text__Pj7S_">INFO@RRE.COM</span></a></div><a target="_blank"
+            rel="noopener noreferrer" class="button_button__dZRSb footer_cta__CkaHZ small-cta"
+            href="https://rre.altareturn.com/"><svg viewBox="0 0 8 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect y="4" width="7" height="5" fill="black"></rect>
+              <rect x="1" y="1" width="1" height="4" fill="black"></rect>
+              <rect x="2" width="3" height="1" fill="black"></rect>
+              <rect x="1" y="8" width="5" height="2" fill="black"></rect>
+              <rect x="5" y="1" width="1" height="4" fill="black"></rect>
+            </svg><span class="link_text__Pj7S_"> </span><span class="link_text__Pj7S_">Limited Partner Login</span></a>
+        </div>
+      </footer>
+    </div>
+    <div class="loader_loader__JGzFU layout-grid-inner">
+      <div class="loader_cross1__D9iKm"><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M13 11h-2v2h2z" fill="black"></path>
+          <path d="M11 9H9v2h2z" fill="black"></path>
+          <path d="M11 13H9v2h2z" fill="black"></path>
+          <path d="M9 7H7v2h2z" fill="black"></path>
+          <path d="M9 15H7v2h2z" fill="black"></path>
+          <path d="M7 5H5v2h2z" fill="black"></path>
+          <path d="M19 5h-2v2h2z" fill="black"></path>
+          <path d="M7 17H5v2h2z" fill="black"></path>
+          <path d="M19 17h-2v2h2z" fill="black"></path>
+          <path d="M15 9h-2v2h2z" fill="black"></path>
+          <path d="M15 13h-2v2h2z" fill="black"></path>
+          <path d="M17 7h-2v2h2z" fill="black"></path>
+          <path d="M17 15h-2v2h2z" fill="black"></path>
+        </svg></div>
+      <div class="loader_cross2__wypf2"><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M13 11h-2v2h2z" fill="black"></path>
+          <path d="M11 9H9v2h2z" fill="black"></path>
+          <path d="M11 13H9v2h2z" fill="black"></path>
+          <path d="M9 7H7v2h2z" fill="black"></path>
+          <path d="M9 15H7v2h2z" fill="black"></path>
+          <path d="M7 5H5v2h2z" fill="black"></path>
+          <path d="M19 5h-2v2h2z" fill="black"></path>
+          <path d="M7 17H5v2h2z" fill="black"></path>
+          <path d="M19 17h-2v2h2z" fill="black"></path>
+          <path d="M15 9h-2v2h2z" fill="black"></path>
+          <path d="M15 13h-2v2h2z" fill="black"></path>
+          <path d="M17 7h-2v2h2z" fill="black"></path>
+          <path d="M17 15h-2v2h2z" fill="black"></path>
+        </svg><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M13 11h-2v2h2z" fill="black"></path>
+          <path d="M11 9H9v2h2z" fill="black"></path>
+          <path d="M11 13H9v2h2z" fill="black"></path>
+          <path d="M9 7H7v2h2z" fill="black"></path>
+          <path d="M9 15H7v2h2z" fill="black"></path>
+          <path d="M7 5H5v2h2z" fill="black"></path>
+          <path d="M19 5h-2v2h2z" fill="black"></path>
+          <path d="M7 17H5v2h2z" fill="black"></path>
+          <path d="M19 17h-2v2h2z" fill="black"></path>
+          <path d="M15 9h-2v2h2z" fill="black"></path>
+          <path d="M15 13h-2v2h2z" fill="black"></path>
+          <path d="M17 7h-2v2h2z" fill="black"></path>
+          <path d="M17 15h-2v2h2z" fill="black"></path>
+        </svg><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M13 11h-2v2h2z" fill="black"></path>
+          <path d="M11 9H9v2h2z" fill="black"></path>
+          <path d="M11 13H9v2h2z" fill="black"></path>
+          <path d="M9 7H7v2h2z" fill="black"></path>
+          <path d="M9 15H7v2h2z" fill="black"></path>
+          <path d="M7 5H5v2h2z" fill="black"></path>
+          <path d="M19 5h-2v2h2z" fill="black"></path>
+          <path d="M7 17H5v2h2z" fill="black"></path>
+          <path d="M19 17h-2v2h2z" fill="black"></path>
+          <path d="M15 9h-2v2h2z" fill="black"></path>
+          <path d="M15 13h-2v2h2z" fill="black"></path>
+          <path d="M17 7h-2v2h2z" fill="black"></path>
+          <path d="M17 15h-2v2h2z" fill="black"></path>
+        </svg><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M13 11h-2v2h2z" fill="black"></path>
+          <path d="M11 9H9v2h2z" fill="black"></path>
+          <path d="M11 13H9v2h2z" fill="black"></path>
+          <path d="M9 7H7v2h2z" fill="black"></path>
+          <path d="M9 15H7v2h2z" fill="black"></path>
+          <path d="M7 5H5v2h2z" fill="black"></path>
+          <path d="M19 5h-2v2h2z" fill="black"></path>
+          <path d="M7 17H5v2h2z" fill="black"></path>
+          <path d="M19 17h-2v2h2z" fill="black"></path>
+          <path d="M15 9h-2v2h2z" fill="black"></path>
+          <path d="M15 13h-2v2h2z" fill="black"></path>
+          <path d="M17 7h-2v2h2z" fill="black"></path>
+          <path d="M17 15h-2v2h2z" fill="black"></path>
+        </svg></div><span class="loader_progress__ASK8n p">000</span>
+      <div class="loader_cross3__2RMc_"><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M13 11h-2v2h2z" fill="black"></path>
+          <path d="M11 9H9v2h2z" fill="black"></path>
+          <path d="M11 13H9v2h2z" fill="black"></path>
+          <path d="M9 7H7v2h2z" fill="black"></path>
+          <path d="M9 15H7v2h2z" fill="black"></path>
+          <path d="M7 5H5v2h2z" fill="black"></path>
+          <path d="M19 5h-2v2h2z" fill="black"></path>
+          <path d="M7 17H5v2h2z" fill="black"></path>
+          <path d="M19 17h-2v2h2z" fill="black"></path>
+          <path d="M15 9h-2v2h2z" fill="black"></path>
+          <path d="M15 13h-2v2h2z" fill="black"></path>
+          <path d="M17 7h-2v2h2z" fill="black"></path>
+          <path d="M17 15h-2v2h2z" fill="black"></path>
+        </svg></div><span class="loader_total__qRooD p">/100</span>
+      <div class="loader_cross4__7xMgY"><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M13 11h-2v2h2z" fill="black"></path>
+          <path d="M11 9H9v2h2z" fill="black"></path>
+          <path d="M11 13H9v2h2z" fill="black"></path>
+          <path d="M9 7H7v2h2z" fill="black"></path>
+          <path d="M9 15H7v2h2z" fill="black"></path>
+          <path d="M7 5H5v2h2z" fill="black"></path>
+          <path d="M19 5h-2v2h2z" fill="black"></path>
+          <path d="M7 17H5v2h2z" fill="black"></path>
+          <path d="M19 17h-2v2h2z" fill="black"></path>
+          <path d="M15 9h-2v2h2z" fill="black"></path>
+          <path d="M15 13h-2v2h2z" fill="black"></path>
+          <path d="M17 7h-2v2h2z" fill="black"></path>
+          <path d="M17 15h-2v2h2z" fill="black"></path>
+        </svg><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M13 11h-2v2h2z" fill="black"></path>
+          <path d="M11 9H9v2h2z" fill="black"></path>
+          <path d="M11 13H9v2h2z" fill="black"></path>
+          <path d="M9 7H7v2h2z" fill="black"></path>
+          <path d="M9 15H7v2h2z" fill="black"></path>
+          <path d="M7 5H5v2h2z" fill="black"></path>
+          <path d="M19 5h-2v2h2z" fill="black"></path>
+          <path d="M7 17H5v2h2z" fill="black"></path>
+          <path d="M19 17h-2v2h2z" fill="black"></path>
+          <path d="M15 9h-2v2h2z" fill="black"></path>
+          <path d="M15 13h-2v2h2z" fill="black"></path>
+          <path d="M17 7h-2v2h2z" fill="black"></path>
+          <path d="M17 15h-2v2h2z" fill="black"></path>
+        </svg></div>
+      <div class="loader_logo__qre5I">
+        <div class="loader_r__DwAa1"><svg viewBox="0 0 303 280" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M23.5 0H0v280h72.6V73H302V0z" fill="#FFFDF9"></path>
+            <path d="M106.1 206.3V280h72.7V176.5H302v-73H106z" fill="#FFFDF9"></path>
+          </svg></div>
+        <div class="loader_e__ruc4Z"><svg viewBox="0 0 326 280" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M325.5 0H.3v73h325.2z" fill="#FFFDF9"></path>
+            <path d="M325.5 103.5H.3v73h325.2z" fill="#FFFDF9"></path>
+            <path d="M325.5 207H.3v73h325.2z" fill="#FFFDF9"></path>
+          </svg></div>
+      </div>
+    </div>
+  </div>
+  <script id="__NEXT_DATA__" type="application/json"
+    crossorigin="">{"props":{"pageProps":{"home":{"data":{"home":{"_sys":{"filename":"home","basename":"home.md","breadcrumbs":["home"],"path":"tina/content/pages/home/home.md","relativePath":"home.md","extension":".md"},"id":"tina/content/pages/home/home.md","__typename":"Home","title":"Home","global":[{"__typename":"HomeGlobalNavigation","navigation":{"__typename":"Navigation","title":"navigation","headerMarquee":{"__typename":"NavigationHeaderMarquee","marqueeText":[{"__typename":"NavigationHeaderMarqueeMarqueeText","text":"Check out the latest RRE POV podcast: Misinformation in the Age of GenAI"}],"link":"/rrepov"},"mainNavigation":[{"__typename":"NavigationMainNavigation","navLink":{"__typename":"NavigationMainNavigationNavLink","text":"Home","url":"/","media":{"__typename":"NavigationMainNavigationNavLinkMedia","caption":"hand icon svg","source":"https://assets.tina.io/ece9d4e6-5d1d-466d-b99b-15cdd7ab9b76/assets/hand2.svg"}}},{"__typename":"NavigationMainNavigation","navLink":{"__typename":"NavigationMainNavigationNavLink","text":"Team","url":"/team","media":{"__typename":"NavigationMainNavigationNavLinkMedia","caption":"pizza svg","source":"https://assets.tina.io/ece9d4e6-5d1d-466d-b99b-15cdd7ab9b76/assets/pizza2.svg"}}},{"__typename":"NavigationMainNavigation","navLink":{"__typename":"NavigationMainNavigationNavLink","text":"Portfolio","url":"/portfolio","media":{"__typename":"NavigationMainNavigationNavLinkMedia","caption":"folder icon svg","source":"https://assets.tina.io/ece9d4e6-5d1d-466d-b99b-15cdd7ab9b76/assets/folder2.svg"}}},{"__typename":"NavigationMainNavigation","navLink":{"__typename":"NavigationMainNavigationNavLink","text":"About","url":"/about","media":{"__typename":"NavigationMainNavigationNavLinkMedia","caption":"book icon svg","source":"https://assets.tina.io/ece9d4e6-5d1d-466d-b99b-15cdd7ab9b76/assets/book2.svg"}}},{"__typename":"NavigationMainNavigation","navLink":{"__typename":"NavigationMainNavigationNavLink","text":"Focuses","url":"/focuses","media":{"__typename":"NavigationMainNavigationNavLinkMedia","caption":"camera icon svg","source":"https://assets.tina.io/ece9d4e6-5d1d-466d-b99b-15cdd7ab9b76/assets/camera2.svg"}}}],"subscribe":{"__typename":"NavigationSubscribe","title":"Subscribe","description":"Sign up with your email address to receive news and updates.","linkText":"Your Email Address"},"externalLinksLeft":[{"__typename":"NavigationExternalLinksLeft","link":{"__typename":"NavigationExternalLinksLeftLink","text":"X","url":"https://twitter.com/RRE"}},{"__typename":"NavigationExternalLinksLeft","link":{"__typename":"NavigationExternalLinksLeftLink","text":"linkedin","url":"https://www.linkedin.com/company/rre-ventures/"}}],"externalLinksRight":[{"__typename":"NavigationExternalLinksRight","link":{"__typename":"NavigationExternalLinksRightLink","text":"blog","url":"https://rre.medium.com/"}},{"__typename":"NavigationExternalLinksRight","link":{"__typename":"NavigationExternalLinksRightLink","text":"RRE POV","url":"https://rre.com/rrepov"}}],"footerInformation":{"__typename":"NavigationFooterInformation","street":"130 E 59TH ST","city":"NEW YORK, NY","street_2":"5355 Town Center Rd","city_2":"BOCA RATON, FL","email":{"__typename":"NavigationFooterInformationEmail","text":"INFO@RRE.COM","url":"mailto:info@rre.com"},"partnerLogin":{"__typename":"NavigationFooterInformationPartnerLogin","text":"Limited Partner Login","url":"https://rre.altareturn.com/"}},"_sys":{"filename":"navigation","basename":"navigation.md","breadcrumbs":["navigation"],"path":"tina/content/pages/navigation/navigation.md","relativePath":"navigation.md","extension":".md"},"id":"tina/content/pages/navigation/navigation.md"}},{"__typename":"HomeGlobalLayout","headerType":"primaryHeader","footerType":"secondaryFooter"},{"__typename":"HomeGlobalMetadata","title":"RRE","description":"RRE Ventures is a venture capital firm that is in it with founders when it matters","keywords":null,"image":"https://assets.tina.io/ece9d4e6-5d1d-466d-b99b-15cdd7ab9b76/og.png","twitterHandle":"@RRE","theme":{"__typename":"HomeGlobalMetadataTheme","mask":"#FFD540","tile":"#1072FA","color":"#000000"}}],"sections":[{"__typename":"HomeSectionsHero","title":{"type":"root","children":[{"type":"h1","children":[{"type":"text","text":"We back the best"}]},{"type":"h1","children":[{"type":"text","text":"for the distance"}]}]},"titleMobile":{"type":"root","children":[{"type":"h1","children":[{"type":"text","text":"We back the"}]},{"type":"h1","children":[{"type":"text","text":"best for the"}]},{"type":"h1","children":[{"type":"text","text":"distance"}]}]},"wordAndImages":[{"__typename":"HomeSectionsHeroWordAndImages","word":"we","images":[{"__typename":"HomeSectionsHeroWordAndImagesImages","image":{"__typename":"HomeSectionsHeroWordAndImagesImagesImage","caption":"jay","source":"https://assets.tina.io/ece9d4e6-5d1d-466d-b99b-15cdd7ab9b76/team/Desktop/jay1.png"}},{"__typename":"HomeSectionsHeroWordAndImagesImages","image":{"__typename":"HomeSectionsHeroWordAndImagesImagesImage","caption":"raju","source":"https://assets.tina.io/ece9d4e6-5d1d-466d-b99b-15cdd7ab9b76/team/Desktop/raju1.png"}},{"__typename":"HomeSectionsHeroWordAndImagesImages","image":{"__typename":"HomeSectionsHeroWordAndImagesImagesImage","caption":"stuart","source":"https://assets.tina.io/ece9d4e6-5d1d-466d-b99b-15cdd7ab9b76/StuEllman.jpg"}},{"__typename":"HomeSectionsHeroWordAndImagesImages","image":{"__typename":"HomeSectionsHeroWordAndImagesImagesImage","caption":"ibis","source":"https://assets.tina.io/ece9d4e6-5d1d-466d-b99b-15cdd7ab9b76/IbisHanzel.jpg"}},{"__typename":"HomeSectionsHeroWordAndImagesImages","image":{"__typename":"HomeSectionsHeroWordAndImagesImagesImage","caption":"james-robinson","source":"https://assets.tina.io/ece9d4e6-5d1d-466d-b99b-15cdd7ab9b76/team/Desktop/james1.png"}},{"__typename":"HomeSectionsHeroWordAndImagesImages","image":{"__typename":"HomeSectionsHeroWordAndImagesImagesImage","caption":"james3","source":"https://assets.tina.io/ece9d4e6-5d1d-466d-b99b-15cdd7ab9b76/team/Desktop/james31.png"}},{"__typename":"HomeSectionsHeroWordAndImagesImages","image":{"__typename":"HomeSectionsHeroWordAndImagesImagesImage","caption":"will","source":"https://assets.tina.io/ece9d4e6-5d1d-466d-b99b-15cdd7ab9b76/team/Desktop/will1.png"}},{"__typename":"HomeSectionsHeroWordAndImagesImages","image":{"__typename":"HomeSectionsHeroWordAndImagesImagesImage","caption":"mckenna","source":"https://assets.tina.io/ece9d4e6-5d1d-466d-b99b-15cdd7ab9b76/team/Desktop/mckenna1.png"}},{"__typename":"HomeSectionsHeroWordAndImagesImages","image":{"__typename":"HomeSectionsHeroWordAndImagesImagesImage","caption":"jonathan","source":"https://assets.tina.io/ece9d4e6-5d1d-466d-b99b-15cdd7ab9b76/team/Desktop/jonathan1.png"}},{"__typename":"HomeSectionsHeroWordAndImagesImages","image":{"__typename":"HomeSectionsHeroWordAndImagesImagesImage","caption":"jenna","source":"https://assets.tina.io/ece9d4e6-5d1d-466d-b99b-15cdd7ab9b76/team/Desktop/jenna1.png"}},{"__typename":"HomeSectionsHeroWordAndImagesImages","image":{"__typename":"HomeSectionsHeroWordAndImagesImagesImage","caption":"jason","source":"https://assets.tina.io/ece9d4e6-5d1d-466d-b99b-15cdd7ab9b76/team/Desktop/jason1.png"}},{"__typename":"HomeSectionsHeroWordAndImagesImages","image":{"__typename":"HomeSectionsHeroWordAndImagesImagesImage","caption":"dennis","source":"https://assets.tina.io/ece9d4e6-5d1d-466d-b99b-15cdd7ab9b76/team/Desktop/dennis1.png"}},{"__typename":"HomeSectionsHeroWordAndImagesImages","image":{"__typename":"HomeSectionsHeroWordAndImagesImagesImage","caption":"matt","source":"https://assets.tina.io/ece9d4e6-5d1d-466d-b99b-15cdd7ab9b76/team/Desktop/Matt1.png"}}],"intenralLink":"/team"},{"__typename":"HomeSectionsHeroWordAndImages","word":"best","images":[{"__typename":"HomeSectionsHeroWordAndImagesImages","image":{"__typename":"HomeSectionsHeroWordAndImagesImagesImage","caption":"enterprise","source":"https://assets.tina.io/ece9d4e6-5d1d-466d-b99b-15cdd7ab9b76/focuses/Enterprise.png"}},{"__typename":"HomeSectionsHeroWordAndImagesImages","image":{"__typename":"HomeSectionsHeroWordAndImagesImagesImage","caption":"silvercare","source":"https://assets.tina.io/ece9d4e6-5d1d-466d-b99b-15cdd7ab9b76/focuses/Silvercare.png"}},{"__typename":"HomeSectionsHeroWordAndImagesImages","image":{"__typename":"HomeSectionsHeroWordAndImagesImagesImage","caption":"consumer","source":"https://assets.tina.io/ece9d4e6-5d1d-466d-b99b-15cdd7ab9b76/focuses/Consumer.png"}},{"__typename":"HomeSectionsHeroWordAndImagesImages","image":{"__typename":"HomeSectionsHeroWordAndImagesImagesImage","caption":"fintech","source":"https://assets.tina.io/ece9d4e6-5d1d-466d-b99b-15cdd7ab9b76/focuses/Fintech.png"}},{"__typename":"HomeSectionsHeroWordAndImagesImages","image":{"__typename":"HomeSectionsHeroWordAndImagesImagesImage","caption":"healthcare","source":"https://assets.tina.io/ece9d4e6-5d1d-466d-b99b-15cdd7ab9b76/focuses/Healtchare.png"}},{"__typename":"HomeSectionsHeroWordAndImagesImages","image":{"__typename":"HomeSectionsHeroWordAndImagesImagesImage","caption":"media","source":"https://assets.tina.io/ece9d4e6-5d1d-466d-b99b-15cdd7ab9b76/focuses/Media.png"}},{"__typename":"HomeSectionsHeroWordAndImagesImages","image":{"__typename":"HomeSectionsHeroWordAndImagesImagesImage","caption":"robotics","source":"https://assets.tina.io/ece9d4e6-5d1d-466d-b99b-15cdd7ab9b76/focuses/Robotics.png"}},{"__typename":"HomeSectionsHeroWordAndImagesImages","image":{"__typename":"HomeSectionsHeroWordAndImagesImagesImage","caption":"real-estate","source":"https://assets.tina.io/ece9d4e6-5d1d-466d-b99b-15cdd7ab9b76/focuses/Real Estate.png"}},{"__typename":"HomeSectionsHeroWordAndImagesImages","image":{"__typename":"HomeSectionsHeroWordAndImagesImagesImage","caption":"pets","source":"https://assets.tina.io/ece9d4e6-5d1d-466d-b99b-15cdd7ab9b76/focuses/Pets.png"}},{"__typename":"HomeSectionsHeroWordAndImagesImages","image":{"__typename":"HomeSectionsHeroWordAndImagesImagesImage","caption":"space","source":"https://assets.tina.io/ece9d4e6-5d1d-466d-b99b-15cdd7ab9b76/focuses/Space.png"}},{"__typename":"HomeSectionsHeroWordAndImagesImages","image":{"__typename":"HomeSectionsHeroWordAndImagesImagesImage","caption":"climate","source":"https://assets.tina.io/ece9d4e6-5d1d-466d-b99b-15cdd7ab9b76/focuses/Climate.png"}}],"intenralLink":"/portfolio"},{"__typename":"HomeSectionsHeroWordAndImages","word":"distance","images":[{"__typename":"HomeSectionsHeroWordAndImagesImages","image":{"__typename":"HomeSectionsHeroWordAndImagesImagesImage","caption":"newyork6","source":"https://assets.tina.io/ece9d4e6-5d1d-466d-b99b-15cdd7ab9b76/home/newyork6.png"}},{"__typename":"HomeSectionsHeroWordAndImagesImages","image":{"__typename":"HomeSectionsHeroWordAndImagesImagesImage","caption":"newyork5","source":"https://assets.tina.io/ece9d4e6-5d1d-466d-b99b-15cdd7ab9b76/home/newyork5.png"}},{"__typename":"HomeSectionsHeroWordAndImagesImages","image":{"__typename":"HomeSectionsHeroWordAndImagesImagesImage","caption":"newyork4","source":"https://assets.tina.io/ece9d4e6-5d1d-466d-b99b-15cdd7ab9b76/home/newyork4.png"}},{"__typename":"HomeSectionsHeroWordAndImagesImages","image":{"__typename":"HomeSectionsHeroWordAndImagesImagesImage","caption":"newyork3","source":"https://assets.tina.io/ece9d4e6-5d1d-466d-b99b-15cdd7ab9b76/home/newyork3.png"}},{"__typename":"HomeSectionsHeroWordAndImagesImages","image":{"__typename":"HomeSectionsHeroWordAndImagesImagesImage","caption":"newyork2","source":"https://assets.tina.io/ece9d4e6-5d1d-466d-b99b-15cdd7ab9b76/home/newyork2.png"}},{"__typename":"HomeSectionsHeroWordAndImagesImages","image":{"__typename":"HomeSectionsHeroWordAndImagesImagesImage","caption":"newyork1","source":"https://assets.tina.io/ece9d4e6-5d1d-466d-b99b-15cdd7ab9b76/home/newyork1.png"}}],"intenralLink":"/about"}]}]}},"errors":null,"query":"\n    query home($relativePath: String!) {\n  home(relativePath: $relativePath) {\n    ... on Document {\n      _sys {\n        filename\n        basename\n        breadcrumbs\n        path\n        relativePath\n        extension\n      }\n      id\n    }\n    ...HomeParts\n  }\n}\n    \n    fragment HomeParts on Home {\n  __typename\n  title\n  global {\n    __typename\n    ... on HomeGlobalMetadata {\n      title\n      description\n      keywords\n      image\n      twitterHandle\n      theme {\n        __typename\n        mask\n        tile\n        color\n      }\n    }\n    ... on HomeGlobalLayout {\n      headerType\n      footerType\n    }\n    ... on HomeGlobalNavigation {\n      navigation {\n        ... on Navigation {\n          __typename\n          title\n          headerMarquee {\n            __typename\n            marqueeText {\n              __typename\n              text\n            }\n            link\n          }\n          mainNavigation {\n            __typename\n            navLink {\n              __typename\n              text\n              url\n              media {\n                __typename\n                caption\n                source\n              }\n            }\n          }\n          subscribe {\n            __typename\n            title\n            description\n            linkText\n          }\n          externalLinksLeft {\n            __typename\n            link {\n              __typename\n              text\n              url\n            }\n          }\n          externalLinksRight {\n            __typename\n            link {\n              __typename\n              text\n              url\n            }\n          }\n          footerInformation {\n            __typename\n            street\n            city\n            street_2\n            city_2\n            email {\n              __typename\n              text\n              url\n            }\n            partnerLogin {\n              __typename\n              text\n              url\n            }\n          }\n        }\n        ... on Document {\n          _sys {\n            filename\n            basename\n            breadcrumbs\n            path\n            relativePath\n            extension\n          }\n          id\n        }\n      }\n    }\n  }\n  sections {\n    __typename\n    ... on HomeSectionsHero {\n      title\n      titleMobile\n      wordAndImages {\n        __typename\n        word\n        images {\n          __typename\n          image {\n            __typename\n            caption\n            source\n          }\n        }\n        intenralLink\n      }\n    }\n  }\n}\n    ","variables":{"relativePath":"home.md"}},"id":"home"},"__N_SSG":true},"page":"/","query":{},"buildId":"uLDReIDSSa0C3N_srq_yQ","isFallback":false,"gsp":true,"scriptLoader":[]}</script>
+</body>
+
+</html>

@@ -14,19 +14,21 @@
   <link rel="stylesheet" href="./index.css"><!-- 헤더 및 index 내용 포함 -->
   <!-- 이 페이지에만 들어가는 style -->
   <link rel="stylesheet" href="./about.css">
+  <link rel="stylesheet" href="./work.css">
   <!-- jQuery -->
   <script src="./assets/jquery-3.7.1.min.js"></script>
   <script src="./assets/gsap.min.js"></script>
   <!-- Plug In -->
-  <script src="./assets/TextPlugin.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-  <!-- <script src="path/to/particles.min.js"></script> -->
+  <!-- <script src="./assets/TextPlugin.min.js"></script> 텍스트 타이핑-->
+  <!-- <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script> 파티클 -->
+  <!-- <script src="path/to/particles.min.js"></script> 파티클 -->
   <!-- 이 페이지에만 들어가는 js -->
   <script defer src="./index.js"></script>
 </head>
 
 <body>
-  <div class="follow-cursor"></div>
+  <!-- 커서 -->
+  <!-- <div class="follow-cursor"></div> -->
 
   <header>
     <div class="header-inner">
@@ -100,7 +102,8 @@
       <p class="about-text desc">이용자의 편의성을 가장 추구합니다.</p>
     </div>
 
-    <div class="line"></div>
+    <!-- who am i 아래 파란 선 -->
+    <!-- <div class="line"></div> -->
 
     <div class="skills-container">
       <h3>Skills</h3>
@@ -156,43 +159,61 @@
   <section id="works">
     <h2>Works</h2>
     <!-- folder.svg -->
-    <svg width="50" height="38" viewBox="0 0 50 38" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <path
-        d="M45.3125 6.33333H26.5625L20.3125 0H4.6875C2.09863 0 0 2.12661 0 4.75V33.25C0 35.8734 2.09863 38 4.6875 38H45.3125C47.9014 38 50 35.8734 50 33.25V11.0833C50 8.45995 47.9014 6.33333 45.3125 6.33333Z"
-        fill="black" />
-    </svg>
-    <ul class="works-container">
-      <li>
-        <strong>project name</strong>
-        <strong>description</strong>
-        <strong>category</strong>
-      </li>
-      <li>
-        <span>포트폴리오 제작</span>
-        <span>개성과 작업물이 담겨져 있는 포트폴리오 제작</span>
-        <span>개인 프로젝트</span>
-      </li>
-      <li>
-        <span>국립극단</span>
-        <span>국립극단 웹 사이트 리디자인 및 구현</span>
-        <span>개인 프로젝트</span>
-      </li>
-      <li>
-        <span>웹 사이트명</span>
-        <span>해당 웹 사이트 리디자인 및 구현</span>
-        <span>개인 프로젝트</span>
-      </li>
-      <li>
-        <span>Beaurit</span>
-        <span>자바스크립트를 이용한 쇼핑몰 사이트 제작</span>
-        <span>팀 프로젝트</span>
-      </li>
-      <li>
-        <span>세진 브론즈빌 주차장 예약 앱</span>
-        <span>주차 공간을 예약할 수 있는 웹앱 UI/UX 디자인</span>
-        <span>팀 프로젝트</span>
-      </li>
-    </ul>
+    <div class="works-inner">
+      <svg width="50" height="38" viewBox="0 0 50 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path
+          d="M45.3125 6.33333H26.5625L20.3125 0H4.6875C2.09863 0 0 2.12661 0 4.75V33.25C0 35.8734 2.09863 38 4.6875 38H45.3125C47.9014 38 50 35.8734 50 33.25V11.0833C50 8.45995 47.9014 6.33333 45.3125 6.33333Z"
+          fill="black" />
+      </svg>
+
+    </div>
+    <div class="works-text-box">
+      <!-- 프로젝트 관련 이미지 영역  -->
+      <div class="works-img">프로젝트 관련 이미지 추후 수정</div>
+
+      <ul class="works-container">
+        <li class="sort-container flex-container"><!-- 그리드 repeat(13, 1fr) -->
+          <strong>project name</strong><!-- grid-column: span 5 -->
+          <strong>description</strong>
+          <strong>category</strong>
+        </li>
+        <li class="여기는 플렉스">
+          <a href="#" class="flex-container"><!-- 여기는 그리드 -->
+            <span class="text1">포트폴리오 제작</span>
+            <span class="text2">개성과 작업물이 담겨져 있는 포트폴리오 제작</span>
+            <span class="text3">개인 프로젝트</span>
+          </a>
+        </li>
+        <li class="">
+          <a href="#" class="flex-container">
+            <span>개인 프로젝트명2</span>
+            <span>웹 사이트 리디자인 및 구현</span>
+            <span>개인 프로젝트</span>
+          </a>
+        </li>
+        <li class="">
+          <a href="#" class="flex-container">
+            <span>개인 프로젝트명1</span>
+            <span>해당 웹 사이트 리디자인 및 구현</span>
+            <span>개인 프로젝트</span>
+          </a>
+        </li>
+        <li class="">
+          <a href="#" class="flex-container">
+            <span>Beaurit</span>
+            <span>자바스크립트를 이용한 쇼핑몰 사이트 제작</span>
+            <span>팀 프로젝트</span>
+          </a>
+        </li>
+        <li class="">
+          <a href="#" class="flex-container">
+            <span>주차장 예약 앱 디자인</span>
+            <span>주차 공간을 예약할 수 있는 웹앱 UI/UX 디자인</span>
+            <span>팀 프로젝트</span>
+          </a>
+        </li>
+      </ul>
+    </div>
   </section>
 </body>
 

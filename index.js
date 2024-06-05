@@ -5,16 +5,20 @@ gsap.to(".main-text span", {
 //   yoyo: true
 });
 */
-document.addEventListener("DOMContentLoaded", function() {
-  var cursor = document.querySelector('.follow-cursor');
 
-  document.addEventListener('mousemove', function(e) {
-    cursor.style.transform = `translate(${e.clientX}px, ${e.clientY}px)`;
-  });
-});
+/* 커서 */
+// document.addEventListener("DOMContentLoaded", function() {
+//   var cursor = document.querySelector('.follow-cursor');
 
+//   document.addEventListener('mousemove', function(e) {
+//     cursor.style.transform = `translate(${e.clientX}px, ${e.clientY}px)`;
+//   });
+// });
+
+/* 로고 클릭 시 이동을 억제함 */
 $('a[href="#"]').on("click", (e) => e.preventDefault());
 
+/* 파티클 js */
 // particlesJS("particles-js", {
 //   particles: {
 //     number: {
@@ -128,13 +132,6 @@ $('a[href="#"]').on("click", (e) => e.preventDefault());
 //   retina_detect: true,
 // });
 
-document.addEventListener("DOMContentLoaded", function () {
-  var spanElement = document.querySelector(".main .main-text span");
-  if (spanElement) {
-    spanElement.classList.add("animated");
-  }
-});
-
 // 페이지가 로드될 때 실행
 document.addEventListener("DOMContentLoaded", function () {
   // 헤더 요소와 .header-marquee 요소를 가져옴
@@ -152,5 +149,3 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 });
-
-
