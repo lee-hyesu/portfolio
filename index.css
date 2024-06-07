@@ -155,7 +155,7 @@ header .header-marquee .marquee-text .circle {
 header .gnb {
   display: flex;
   gap: 20px;
-  margin-left: 35px;
+  margin-left: 125px;
 }
 header .gnb li:first-child {
   margin-left: 0;

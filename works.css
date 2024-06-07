@@ -56,7 +56,11 @@
   font-family: var(--font-ko);
   font-size: 1.1rem;
 }
-/* '첫번째 li는 빼고'라는 선택자 작성해줘야 함 */
+/* '첫번째 li는 빼고' */
+#works .works-text-box .works-container li:first-child:hover {
+  background-color: transparent;
+  color: #000;
+}
 #works .works-text-box .works-container li:hover {
   background-color: var(--color-blue);
   color: #fff;
