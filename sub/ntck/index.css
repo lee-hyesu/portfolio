@@ -1,0 +1,45 @@
+@charset "utf-8";
+
+/* 
+  font-family: "Noto Sans KR", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+*/
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap');
+
+body {
+  font-family: "Noto Sans KR", -apple-system, BlinkMacSystemFont, "Malgun Gothic", "맑은 고딕", helvetica, "Apple SD Gothic Neo", sans-serif;
+}
+
+/*** header ***/
+header .utill-wrapper {
+  margin: 10px 6% 0 0;
+}
+header .utill-wrapper .utill {
+  display: flex;
+  justify-content: flex-end;
+  font-size: 13px;
+  font-weight: 500;
+}
+header .utill-wrapper .utill li {
+  margin-right: 20px;
+  cursor: pointer;
+}
+header .utill-wrapper .utill li:nth-child(4) {
+  color: #006A84;
+}
+header .utill-wrapper .utill li:last-child {
+  color: #FFBB00;
+  margin: 0;
+}
+
+header .nav-wrapper {
+  padding: 10px 0 0 4%;
+}
+header .nav-wrapper .logo {
+  width: 138px;
+  height: 67px;
+  background: url(./images/logo.png) no-repeat 0%;
+  text-indent: -9999px;
+}
