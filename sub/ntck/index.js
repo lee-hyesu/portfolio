@@ -15,6 +15,9 @@ $(window).on("scroll", () => {
 
 // 초기 상태에서 .on 클래스 추가
 $(".main-nav ul li:first-child p a").addClass("on");
+$(".bg-wrapper .bg-img .inner-bg-1").addClass("on");
+$('.bg-wrapper .bg-img .inner-1').addClass('on');
+$(".main-nav ul li p").addClass("on");
 
 // main-nav 글씨 색상 조절
 $(window).on("scroll", () => {
@@ -32,7 +35,7 @@ $(window).on("scroll", () => {
     $(".main-nav ul li:nth-child(2) p a").removeClass("on");
   }
 
-  if (scrollPosition > 1200 && scrollPosition <= 1660) {
+  if (scrollPosition > 1200 && scrollPosition <= 1900) {
     $(".main-nav ul li:last-child p a").addClass("on");
   } else {
     $(".main-nav ul li:last-child p a").removeClass("on");
@@ -52,16 +55,30 @@ $(window).on("scroll", () => {
   } else {
     $('.about .about-title p').removeClass('active');
   }
+
+  // 햄릿 inner-bg
+  if (scrollPosition < 300) {
+    $(".bg-wrapper .bg-img .inner-bg-1").addClass("on");
+    $('.bg-wrapper .bg-img .inner-1').addClass('on');
+  } else {
+    $(".bg-wrapper .bg-img .inner-bg-1").removeClass("on");
+    $('.bg-wrapper .bg-img .inner-1').removeClass('on');
+  }
+
+  if (800 <= scrollPosition && scrollPosition < 1500) {
+    $(".bg-wrapper .bg-img .inner-bg-2").addClass("on");
+  } else {
+    $(".bg-wrapper .bg-img .inner-bg-2").removeClass("on");
+  }
 });
 
 // 자세히 보기 버튼 밑줄 효과
-$(document).ready(function() {
-  // var $moreBtn = $('#main-slide1 .more-btn');
+$(document).ready(function () {
 
   // 초기 상태에서 on 클래스 추가
   $('#main-slide1 .more-btn').addClass('on');
 
-  $(window).scroll(function() {
+  $(window).scroll(function () {
     var scrollPosition = $(this).scrollTop();
 
     if (scrollPosition <= 800) {
@@ -86,6 +103,12 @@ $(document).ready(function() {
       $('.notice .title h3').addClass('on');
     } else {
       $('.notice .title h3').removeClass('on');
+    }
+
+    if (700 <= scrollPosition) {
+      $('.go-to-top').addClass('active');
+    } else {
+      $('.go-to-top').removeClass('active');
     }
   });
 });
