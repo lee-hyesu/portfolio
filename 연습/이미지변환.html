@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="utf-8">
+  <title>이미지변환</title>
+  <style>
+    .container {
+      height: 10vh;
+    }
+
+    .box {
+      height: 300vh;
+    }
+    .wrapper {
+      height: 700px;
+    }
+    .transform-image {
+      transition: transform 0.5s ease;
+      transform: translateY(0);
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container"></div>
+  <div class="wrapper">
+    <div class="box">
+      <img src="./images/레몬.jpg" alt="레몬" class="transform-image">
+    </div>
+  </div>
+
+  <script>
+    window.addEventListener('scroll', function () {
+      const transformImage = document.querySelector('.transform-image');
+      const scrollPosition = window.pageYOffset;
+
+      transformImage.style.transform = `translateY(${scrollPosition * 0.5}px)`;
+    });
+  </script>
+</body>
+
+</html>
