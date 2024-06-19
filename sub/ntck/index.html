@@ -12,9 +12,11 @@
   <link rel="stylesheet" href="../../assets/style/reset.css">
   <!-- style -->
   <link rel="stylesheet" href="./index.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
   <!-- js -->
   <script src="../../assets/js/jquery-3.7.1.min.js"></script>
   <script src="../../assets/js/jquery-ui.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script defer src="./index.js"></script>
 </head>
 
@@ -34,13 +36,45 @@
       <h1 class="logo">
         <a href="#">국립극단로고</a>
       </h1>
-      <div class="menu">
-        <i></i>
-        <i></i>
-        <i></i>
-      </div>
     </div>
   </header>
+  <!-- menu-nav -->
+  <nav>
+    <div class="nav-inner">
+      <ul class="menus">
+        <li>
+          <p>공연소개</p>
+        </li>
+        <li>
+          <p>공지사항</p>
+        </li>
+        <li>
+          <p>이용안내</p>
+        </li>
+        <li>
+          <p>고객센터</p>
+        </li>
+        <li>
+          <p>국립극단</p>
+        </li>
+      </ul>
+      <div class="links">
+        <div class="center">
+          <p>1644-2003</p>
+          <p>국립극단 고객센터</p>
+        </div>
+        <address class="addre">
+          <p>서울특별시 종로구 대학로 57 홍익대학교 대학로캠퍼스 교육동 2층</p>
+          <p>COPYRIGHT 2014 NATIONAL THEATER COMPANY OF KOREA. ALL RIGHTS RESERVED.</p>
+        </address>
+      </div>
+    </div>
+  </nav>
+  <a href="#" class="menu">
+    <i></i>
+    <i></i>
+    <i></i>
+  </a>
   <!-- main-nav -->
   <div class="main-nav">
     <ul>
@@ -91,10 +125,10 @@
           <p>2024.07.05.-2024.07.29.<br>
             명동예술극장</p>
         </div>
-          <div class="more-btn">
-            <p>자세히 보기</p>
-            <div class="line"></div>
-          </div>
+        <div class="more-btn">
+          <p>자세히 보기</p>
+          <div class="line"></div>
+        </div>
       </div>
       <div class="slide-inner" id="main-slide2">
         <div class="inner-text">
@@ -202,81 +236,95 @@
   </section>
 
   <section class="ntck">
-    <h3>국립극단</h3>
+    <div class="ntck-title">
+      <h3>국립극단</h3>
+    </div>
     <div class="ntck-wrapper">
       <ul class="ntck-inner">
-        <li>
+        <li data-aos="fade-down">
           <div class="ntck-item ntck-item-1">
-            <div class="inner img1">
-              <!-- background-image-ntck-1 -->
-              <div class="ntck-inner-title">
-                <!-- before로 사진 위 필터(#000 opacity:25%) 만들기 -->
-                <div class="txt">온라인 전시</div>
+            <div class="hover-box">
+              <div class="inner img1">
+                <!-- background-image -->
+                <div class="ntck-inner-title">
+                  <!-- before로 사진 위 필터(#000 opacity:25%) 만들기 -->
+                  <div class="txt">온라인 전시</div>
+                </div>
               </div>
             </div>
             <p class="small-title">온라인 전시</p>
             <p class="desc">국립극단 디지털 아카이브로 보는<br>차범석 연극사</p>
           </div>
         </li>
-        <li>
+        <li data-aos="fade-down">
           <div class="ntck-item ntck-item-2">
-            <div class="inner img2">
-              <!-- backgroundImage-ntck-2 -->
-              <div class="ntck-inner-title">
-                <!-- ::before -->
-                <div class="txt">후원</div>
+            <div class="hover-box">
+              <div class="inner img2">
+                <!-- backgroundImage-ntck-2 -->
+                <div class="ntck-inner-title">
+                  <!-- ::before -->
+                  <div class="txt">후원</div>
+                </div>
               </div>
             </div>
             <p class="small-title">후원</p>
             <p class="desc">국립극단과 함께 연극의 미래를<br>만들어 갈 후원자를 모십니다!</p>
           </div>
         </li>
-        <li>
+        <li data-aos="fade-down">
           <div class="ntck-item ntck-item-3">
-            <div class="inner img3">
-              <!-- backgroundImage-ntck-3 -->
-              <div class="ntck-inner-title">
-                <!-- ::before -->
-                <div class="txt">작품개발</div>
+            <div class="hover-box">
+              <div class="inner img3">
+                <!-- backgroundImage-ntck-3 -->
+                <div class="ntck-inner-title">
+                  <!-- ::before -->
+                  <div class="txt">작품개발</div>
+                </div>
               </div>
             </div>
             <p class="small-title">작품개발</p>
             <p class="desc">새로운 시대<br>새로운 연극을 탐색하는 실험과 개발</p>
           </div>
         </li>
-        <li>
+        <li data-aos="fade-down">
           <div class="ntck-item ntck-item-4">
-            <div class="inner img4">
-              <!-- backgroundImage-ntck-4 -->
-              <div class="ntck-inner-title">
-                <!-- ::before -->
-                <div class="txt">어린이<br>청소년극<br>연구소</div>
+            <div class="hover-box">
+              <div class="inner img4">
+                <!-- backgroundImage-ntck-4 -->
+                <div class="ntck-inner-title">
+                  <!-- ::before -->
+                  <div class="txt">어린이<br>청소년극<br>연구소</div>
+                </div>
               </div>
             </div>
             <p class="small-title">어린이 청소년극 연구소</p>
             <p class="desc">예술의 주체 삶의 주인공으로<br>만나는 새로운 서사 어린이 청소년극</p>
           </div>
         </li>
-        <li>
+        <li data-aos="fade-down">
           <div class="ntck-item ntck-item-5">
-            <div class="inner img5">
-              <!-- backgroundImage-ntck-5 -->
-              <div class="ntck-inner-title">
-                <!-- ::before -->
-                <div class="txt">시즌단원</div>
+            <div class="hover-box">
+              <div class="inner img5">
+                <!-- backgroundImage-ntck-5 -->
+                <div class="ntck-inner-title">
+                  <!-- ::before -->
+                  <div class="txt">시즌단원</div>
+                </div>
               </div>
             </div>
             <p class="small-title">시즌단원</p>
             <p class="desc">국립극단의 제작공연에 함께할<br>시즌단원 선발</p>
           </div>
         </li>
-        <li>
+        <li data-aos="fade-down">
           <div class="ntck-item ntck-item-6">
-            <div class="inner img6">
-              <!-- backgroundImage-ntck-6 -->
-              <div class="ntck-inner-title">
-                <!-- ::before -->
-                <div class="txt">성폭력<br>예방 및 대처</div>
+            <div class="hover-box">
+              <div class="inner img6">
+                <!-- backgroundImage-ntck-6 -->
+                <div class="ntck-inner-title">
+                  <!-- ::before -->
+                  <div class="txt">성폭력<br>예방 및 대처</div>
+                </div>
               </div>
             </div>
             <p class="small-title">성폭력 예방 및 대처</p>
@@ -295,10 +343,18 @@
         <div class="footer-item left">
           <ul>
             <li class="footer-inner-title">무엇을 도와드릴까요?</li>
-            <li>예매안내</li>
-            <li>자주 묻는 질문</li>
-            <li>오시는 길</li>
-            <li>문화나눔 푸른티켓</li>
+            <li>
+              <a href="#">예매안내</a>
+            </li>
+            <li>
+              <a href="#">자주 묻는 질문</a>
+            </li>
+            <li>
+              <a href="#">오시는 길</a>
+            </li>
+            <li>
+              <a href="#">문화나눔 푸른티켓</a>
+            </li>
           </ul>
         </div>
         <div class="footer-item right">
@@ -327,6 +383,14 @@
       </div>
     </div>
   </footer>
+
+  <script>
+    // AOS.init();
+    AOS.init({
+      duration: 1800,
+      // offset: '3900px',
+    });
+  </script>
 </body>
 
 </html>
