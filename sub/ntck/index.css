@@ -113,7 +113,7 @@ header .utill-wrapper .utill li {
   margin-right: 20px;
   cursor: pointer;
 }
-header .utill-wrapper .utill li:nth-child(4) {
+header .utill-wrapper .utill li:nth-child(6) {
   color: #006A84;
 }
 header .utill-wrapper .utill li:last-child {
@@ -198,11 +198,11 @@ nav {
   height: 100%;
   z-index: 9;
   background-color: #fff;
-  box-shadow: 1px 5px 20px 0 rgba(0,0,0,.3);
   transform: translateX(100%);
   transition: all 0.8s cubic-bezier(0.215, 0.61, 0.355, 1);
 }
 nav.is-active {
+  box-shadow: 1px 5px 20px 0 rgba(0,0,0,.3);
   transform: translateX(0);
 }
 nav .nav-inner {
