@@ -95,6 +95,7 @@ h3 {font-size: 40px;}
   4px 4px 5px 0px rgba(0,0,0,.1);
   transition: 0.4s cubic-bezier(0.215, 0.610, 0.355, 1);
   opacity: 0;
+  z-index: 9;
 }
 .go-to-top.active {
   opacity: 1;
@@ -249,7 +250,7 @@ nav .nav-inner .links p {
   font-size: 18px;
 }
 nav .nav-inner .links .addre { margin-top: 30px;}
-nav .nav-inner .links .addre p { font-size: 14px; font-style: normal; color: #888;}
+nav .nav-inner .links .addre p { font-size: 14px; font-style: normal; color: #999;}
 
 /*** main-nav ***/
 .main-nav {
