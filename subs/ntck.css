@@ -1,0 +1,21 @@
+@charset "utf-8";
+
+header .header-marquee {
+  /* display: none; */
+  opacity: 0;
+}
+header .header-innner {
+  justify-content: space-between;
+}
+h2 { font-size: 64px;}
+h3 { font-size: 32px; color: #A6A5A2;}
+p { font-size: 18px;}
+main { display: flex; font-family: var(--font-ko);}
+aside {
+  width: 43%;
+}
+main .contents {
+  width: 57%;
+  text-align: left;
+}
+main .contents .title p { font-size: 20px;}
