@@ -95,7 +95,8 @@ header {
   top: 0;
   padding: 2.2vw 0 0;
   z-index: 99;
-  backdrop-filter: blur(2px);
+  /* backdrop-filter: blur(2px); */
+  background-color: var(--color-primary);
   transition: .2s;
 }
 header .header-inner {
@@ -358,8 +359,11 @@ header .gnb li:hover a {
 }
 
 #works .works-text-box {
-  display: grid;
-  grid-template-columns: repeat(20, minmax(0, 1fr));
+  /* display: grid; */
+  /* grid-template-columns: repeat(20, minmax(0, 1fr)); */
+  margin-top: 150px;
+  display: flex;
+  justify-content: space-evenly;
 }
 #works .works-text-box .works-img {
   background-color: #ddd;
@@ -367,6 +371,7 @@ header .gnb li:hover a {
 }
 #works .works-text-box .works-container {
   grid-column: 8 / 20;
+  width: 1000px;
 }
 #works .works-text-box .works-container span {
   font-family: var(--font-ko);
