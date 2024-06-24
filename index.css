@@ -1,7 +1,7 @@
 @charset "utf-8";
 
 /* 'Pretendard' ,sans-serif */
-@import url(../assets/style/pretendard-subset.css);
+@import url(./assets/style/pretendard-subset.css);
 
 /* 
   font-family: "Playfair Display", serif;
