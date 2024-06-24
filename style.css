@@ -258,7 +258,7 @@
   justify-content: space-evenly;
 }
 #works .works-text-box .works-img {
-  background-color: #ddd;
+  /* background-color: #ddd; */
   width: 500px;
 }
 #works .works-text-box .works-container {
@@ -305,3 +305,5 @@
 #works .works-text-box .works-container .sort-container strong:nth-child(3) {
   grid-column: 13;
 }
+
+#works .works-text-box .works-img img { width: 100%; background-color: #ddd;}

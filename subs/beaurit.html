@@ -1,13 +1,150 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
   <meta charset="utf-8">
-  <title>제목</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
-  <script src="../assets/jquery-3.7.1.min.js"></script>
+  <title>Beaurit</title>
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+  <!-- favicon -->
+  <link rel="apple-touch-icon" sizes="180x180" href="../favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="../favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../favicon/favicon-16x16.png">
+  <link rel="manifest" href="../favicon/site.webmanifest">
+  <!-- reset -->
+  <link rel="stylesheet" href="../assets/style/reset.css">
+  <!-- 공통된 style -->
+  <link rel="stylesheet" href="../index.css">
+  <!-- 이 페이지에만 들어가는 style -->
+  <link rel="stylesheet" href="./beaurit.css">
+  <!-- jQuery -->
+  <script src="../assets/js/jquery-3.7.1.min.js"></script>
+  <!-- 공통된 js -->
+  <!-- 이 페이지에만 들어가는 js  -->
 </head>
 
 <body>
-  
+  <header>
+    <div class="header-inner">
+      <a href="https://lee-hyesu.github.io/portfolio/">Welcome to Hye-Su's portfolio</a>
+      <div class="header-marquee">
+        <div class="marquee-text">안녕하세요, 웹 퍼블리셔 이혜수입니다!<span class="circle"></span></div>
+        <div class="marquee-text">안녕하세요, 웹 퍼블리셔 이혜수입니다!<span class="circle"></span></div>
+        <div class="marquee-text">안녕하세요, 웹 퍼블리셔 이혜수입니다!<span class="circle"></span></div>
+        <div class="marquee-text">안녕하세요, 웹 퍼블리셔 이혜수입니다!<span class="circle"></span></div>
+        <div class="marquee-text">안녕하세요, 웹 퍼블리셔 이혜수입니다!<span class="circle"></span></div>
+      </div>
+      <ul class="gnb">
+        <li><a href="https://lee-hyesu.github.io/portfolio/#about">About</a></li>
+        <li><a href="https://lee-hyesu.github.io/portfolio/#works">Works</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main>
+    <section class="left">
+      <img src="./images/beaurit.png" alt="뷰릿 웹사이트 이미지" style="width: 660px;">
+    </section>
+
+    <section class="contents">
+      <div class="title">
+        <h2>Beaurit</h2>
+        <p>‘건강한 아름다움’이 깃든 우먼 라이프 스타일을 제안하는 뷰릿<br>그 아이덴티티에 맞춰 리디자인하여 생동감 있는 웹사이트를 구현했습니다.</p>
+        <ul class="des">
+          <li>
+            <p>Skills & Tools<span>JavaScript / jQuery / GitHub / Figma</span></p>
+          </li>
+          <li>
+            <p>작업기간<span>2024.05.06~2024.05.24</span></p>
+          </li>
+          <li>
+            <p>Keyword<span>#생동감 #반응형</span></p>
+          </li>
+        </ul>
+      </div>
+
+      <div class="overview">
+        <ul class="overview-inner-top">
+          <li>
+            <h3>Goal</h3>
+            <ul>
+              <li>
+                <p>시선을 사로잡는 반응형 웹페이지 기능 구현</p>
+              </li>
+              <li>
+                <p>원활한 협업 능력 키우기</p>
+              </li>
+            </ul>
+          </li>
+        </ul>
+        <ul class="overview-inner-bottom">
+          <li>
+            <h3>Timeline</h3>
+            <ul>
+              <li>
+                <p>디자인 방향성 설정</p>
+              </li>
+              <li>
+                <p>와이어 프레임 제작</p>
+              </li>
+              <li>
+                <p>스타일 가이드 설계</p>
+              </li>
+              <li>
+                <p>퍼블리싱 가이드 라인 작성</p>
+              </li>
+              <li>
+                <p>디렉토리 구성</p>
+              </li>
+              <li>
+                <p>HTML, CSS, JS(JQuery) 제작</p>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <h3>Style Guide</h3>
+            <img src="" alt="사용 색상 이미지">
+            <img src="./images/beaurit-font-family.jpg" alt="폰트 이미지">
+          </li>
+        </ul>
+      </div>
+
+      <button class="go-to-site">
+        <a href="https://beaurit-project.github.io/beaurit/" class="site-inner">
+          <svg width="22" height="21" viewBox="0 0 22 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g clip-path="url(#clip0_388_38)">
+              <path
+                d="M9.16999 2.82861L10.1421 1.96143C10.5538 1.59424 11.2194 1.59424 11.6267 1.96143L20.1397 9.55127C20.5513 9.91846 20.5513 10.5122 20.1397 10.8755L11.6267 18.4692C11.215 18.8364 10.5494 18.8364 10.1421 18.4692L9.16999 17.6021C8.75397 17.231 8.76273 16.6255 9.1875 16.2622L14.4643 11.7778H1.87875C1.29632 11.7778 0.827759 11.3599 0.827759 10.8403V9.59033C0.827759 9.0708 1.29632 8.65283 1.87875 8.65283H14.4643L9.1875 4.16846C8.75835 3.80518 8.74959 3.19971 9.16999 2.82861Z"
+                fill="white" />
+            </g>
+            <defs>
+              <clipPath id="clip0_388_38">
+                <rect width="21" height="20" fill="white" transform="translate(0.708496 0.215332)" />
+              </clipPath>
+            </defs>
+          </svg>
+          <p>웹사이트 보러가기</p>
+        </a>
+      </button>
+      <button class="go-to-pdf">
+        <a href="https://beaurit-project.github.io/beaurit/" class="site-inner">
+          <svg width="22" height="21" viewBox="0 0 22 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g clip-path="url(#clip0_388_38)">
+              <path
+                d="M9.16999 2.82861L10.1421 1.96143C10.5538 1.59424 11.2194 1.59424 11.6267 1.96143L20.1397 9.55127C20.5513 9.91846 20.5513 10.5122 20.1397 10.8755L11.6267 18.4692C11.215 18.8364 10.5494 18.8364 10.1421 18.4692L9.16999 17.6021C8.75397 17.231 8.76273 16.6255 9.1875 16.2622L14.4643 11.7778H1.87875C1.29632 11.7778 0.827759 11.3599 0.827759 10.8403V9.59033C0.827759 9.0708 1.29632 8.65283 1.87875 8.65283H14.4643L9.1875 4.16846C8.75835 3.80518 8.74959 3.19971 9.16999 2.82861Z"
+                fill="white" />
+            </g>
+            <defs>
+              <clipPath id="clip0_388_38">
+                <rect width="21" height="20" fill="white" transform="translate(0.708496 0.215332)" />
+              </clipPath>
+            </defs>
+          </svg>
+          <p>발표 pdf 보러가기</p>
+        </a>
+      </button>
+    </section>
+  </main>
 </body>
+
 </html>

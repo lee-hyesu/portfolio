@@ -1,9 +1,5 @@
 @charset "utf-8";
 
-:root {
-  --headline-margin: 100px;
-}
-
 h2 { font-size: 64px;}
 h3 { font-size: 32px; color: #A6A5A2; margin-bottom: 10px;}
 p { font-size: 18px; line-height: 1.7;}
@@ -34,6 +30,7 @@ header .header-marquee {
 header .header-innner {
   justify-content: space-between;
 }
+
 /*** title ***/
 main .contents .title h2 { margin-bottom: 40px;}
 main .contents .title p { font-size: 20px;}
@@ -62,7 +59,6 @@ main .contents .title .des p span { font-weight: 300;}
 .style-guide .keyword { margin-bottom: 70px;}
 .style-guide .color { margin-bottom: 70px;}
 .style-guide .color .color-inner { display: grid; grid-template-columns: 1fr 1fr;}
-.style-guide .typo {}
 .style-guide .typo .typo-inner { display: grid; grid-template-columns: repeat(3, 1fr);}
 
 /*** problem ***/
@@ -120,5 +116,5 @@ main .contents .title .des p span { font-weight: 300;}
   height: 100%;
 }
 .go-to-top svg { transition: .2s;}
-.go-to-top:hover svg { transform: translateY(-5px);}
+.go-to-top:hover { transform: translateY(-5px);}
 .go-to-top:hover { background-color: #000;}
