@@ -103,7 +103,7 @@ main .contents .title .des p span { font-weight: 300;}
   bottom: 95px;
   padding: 0;
   opacity: 0;
-  transition: .2s;
+  transition: .3s ease-in;
 }
 .go-to-top .top-inner {
   display: flex;

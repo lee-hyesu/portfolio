@@ -19,6 +19,7 @@ document.addEventListener("DOMContentLoaded", function () {
   var marquee = document.querySelector(".header-marquee");
 
   // 스크롤 이벤트를 감지하여 헤더가 일정 이상 스크롤되면 opacity를 0으로 설정
+  // 이 부분 때문에 스크롤 올릴 때 한 번 걸리는 현상 생김
   window.addEventListener("scroll", function () {
     if (window.scrollY > header.offsetHeight) {
       marquee.style.opacity = "0";
