@@ -4,6 +4,10 @@
 //   console.log("현재 스크롤 위치: " + scrollPosition + "px");
 // };
 
+AOS.init({
+  duration: 1500,
+});
+
 // menu-nav 열렸을 때 x 아이콘 눌러도 a 기능 안 되도록 함
 $(document).ready(function() {
   $('.menu').on('click', function(event) {
