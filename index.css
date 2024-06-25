@@ -17,6 +17,7 @@
   --color-blue: #1072FA;
   --color-gray: #DEDFDF;
   --color-primary: #fffdf9;
+  --color-black: #000;
   --font-gray: #A6A5A2;
 
   --headline-margin: 100px;
@@ -37,10 +38,11 @@ body {
   border-radius: 25px;
 }
 ::-webkit-scrollbar-track {
-  background: #000;
+  background: var(--color-black);
 }
 ::selection {
   background-color: var(--color-blue);
+  background-color: var(--color-black);
   color: var(--color-primary);
 }
 

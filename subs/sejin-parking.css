@@ -1,0 +1,33 @@
+@charset "utf-8";
+
+.left img { width: 660px; height: 375px; border: 1px solid #000; border-radius: 5px; object-fit: cover; background-color: white;}
+main .contents .title .des li p { display: grid; grid-template-columns: 0.2fr 1fr;}
+
+/*** btn ***/
+.btn-wrapper {
+  display: flex;
+}
+.go-to-report { margin-right: 1vw;}
+.go-to-pdf , .go-to-report {
+  width: 240px;
+  height: 50px;
+  padding: 0;
+  border: none;
+  border-radius: 5px;
+  background-color: var(--color-black);
+  color: #fff;
+  font-family: var(--font-ko);
+}
+.go-to-site { margin-right: 1vw;}
+.go-to-pdf, .go-to-report { 
+  display: flex; 
+  justify-content: space-around;
+  align-items: center;
+}
+.go-to-pdf svg, .go-to-report svg { transition: .2s;}
+.go-to-pdf:hover svg, .go-to-report:hover svg {
+  transform: translateX(10px);
+}
+.go-to-pdf:hover, .go-to-report:hover {
+  background-color: var(--color-blue)
+}
