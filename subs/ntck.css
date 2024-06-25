@@ -7,31 +7,27 @@ main ul {list-style: square; padding-left: 20px;}
 .underline { text-decoration: underline; text-underline-offset: 5px; margin-bottom: 15px;}
 main {
   display: flex;
+  justify-content: space-between;
   font-family: var(--font-ko);
   margin-top: 50px;
   width: 100%;
 }
 .left {
   position: fixed;
+  left: 0;
   width: 43%;
-}
-main .contents {
-  width: 57%;
-  text-align: left;
-  margin-left: 44%;
-  margin-bottom: 100px;
 }
 
 /*** header ***/
-header .header-marquee {
-  /* display: none; */
-  opacity: 0;
-}
-header .header-innner {
-  justify-content: space-between;
-}
+header .header-marquee { opacity: 0;}
 
-/*** title ***/
+/*** main ***/
+main .contents {
+  width: 50%;
+  text-align: left;
+  margin-left: 45%;
+  margin-bottom: 100px;
+}
 main .contents .title h2 { margin-bottom: 40px;}
 main .contents .title p { font-size: 20px;}
 main .contents .title .des {
@@ -105,8 +101,9 @@ main .contents .title .des p span { font-weight: 300;}
   right: 2.2vw;
   bottom: 95px;
   padding: 0;
+  transition: all .2s;
   opacity: 0;
-  transition: .2s;
+  scale: 0;
 }
 .go-to-top .top-inner {
   display: flex;
