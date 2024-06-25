@@ -70,7 +70,7 @@ header .header-marquee {
   width: 35vw;
   height: 2.7vw;
   line-height: 2.2;
-  margin: 0 auto;
+  margin: -20px auto;
   border: 1px var(--color-gray) solid;
   border-radius: 0.3vw;
   overflow: hidden;
