@@ -74,7 +74,7 @@ $(window).on("scroll", () => {
   }
 
   // about 부분 텍스트 나타나는 효과
-  if (scrollPosition >= 2900) {
+  if (scrollPosition >= 2940) {
     $(".about .about-title p").addClass("active");
   } else {
     $(".about .about-title p").removeClass("active");
@@ -97,7 +97,7 @@ $(window).on("scroll", () => {
     $(".bg-wrapper .bg-img .inner-2").removeClass("on");
   }
 
-  if (1500 <= scrollPosition && scrollPosition < 2150) {
+  if (1500 <= scrollPosition && scrollPosition < 2200) {
     $(".bg-wrapper .bg-img .inner-bg-3").addClass("on");
     $(".bg-wrapper .bg-img .inner-3").addClass("on");
   } else {
@@ -158,7 +158,7 @@ $(document).ready(function () {
       $("#main-slide3 .more-btn").removeClass("on");
     }
 
-    if (2190 <= scrollPosition) {
+    if (2200 <= scrollPosition) {
       $(".notice .title h3").addClass("on");
     } else {
       $(".notice .title h3").removeClass("on");
@@ -171,7 +171,7 @@ $(document).ready(function () {
       $(".go-to-top").removeClass("active");
     }
 
-    if (scrollPosition >= 2298) {
+    if (scrollPosition >= 2200) {
       $(".notice .title .more-btn").addClass("on");
     } else {
       $(".notice .title .more-btn").removeClass("on");

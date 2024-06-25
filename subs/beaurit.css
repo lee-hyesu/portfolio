@@ -17,6 +17,7 @@ main {
   left: 0;
   width: 43%;
 }
+.left video { width: 660px; border: 1px solid #000; border-radius: 5px;}
 
 /*** header ***/
 header .header-marquee { opacity: 0;}

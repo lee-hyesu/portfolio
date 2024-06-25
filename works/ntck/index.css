@@ -415,7 +415,7 @@ nav .nav-inner .links .addre p { font-size: 14px; font-style: normal; color: #99
 .notice .title h3.on {
   opacity: 1;
   transform: translateY(0);
-  transition: transform 1s cubic-bezier(0.895, 0, 0.18, 1);
+  transition: transform 1.3s cubic-bezier(0.895, 0, 0.18, 1);
 }
 .notice .notice-wrapper {
   width: 1200px;
