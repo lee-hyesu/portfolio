@@ -1,14 +1,20 @@
 @charset "utf-8";
 
-.left img { width: 660px; height: 375px; border: 1px solid #000; border-radius: 5px; object-fit: cover; background-color: white;}
+.left video { border: none;}
+main .contents .title h2 p { font-size: 18px;}
 main .contents .title .des li p { display: grid; grid-template-columns: 0.2fr 1fr;}
+.duties { margin-bottom: var(--headline-margin);}
+.duties ul li { margin-bottom: 30px;}
+.review .review-text-wrapper .review-text-title { margin-bottom: 30px;}
+.review-text li { list-style: none;}
 
 /*** btn ***/
 .btn-wrapper {
   display: flex;
+  justify-content: space-between;
+  width: 800px;
 }
-.go-to-report { margin-right: 1vw;}
-.go-to-pdf , .go-to-report {
+.go-to-pdf , .go-to-report , .go-to-figma {
   width: 240px;
   height: 50px;
   padding: 0;
@@ -17,17 +23,14 @@ main .contents .title .des li p { display: grid; grid-template-columns: 0.2fr 1f
   background-color: var(--color-black);
   color: #fff;
   font-family: var(--font-ko);
-}
-.go-to-site { margin-right: 1vw;}
-.go-to-pdf, .go-to-report { 
   display: flex; 
   justify-content: space-around;
   align-items: center;
 }
-.go-to-pdf svg, .go-to-report svg { transition: .2s;}
-.go-to-pdf:hover svg, .go-to-report:hover svg {
-  transform: translateX(10px);
-}
-.go-to-pdf:hover, .go-to-report:hover {
+.go-to-pdf svg, .go-to-report svg, .go-to-figma svg { transition: .2s;}
+.go-to-pdf:hover, .go-to-report:hover , .go-to-figma:hover {
   background-color: var(--color-blue)
+}
+.go-to-pdf:hover svg, .go-to-report:hover svg, .go-to-figma:hover svg {
+  transform: translateX(10px);
 }

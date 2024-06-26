@@ -2,11 +2,6 @@
 
 main .contents .title .des li p { display: grid; grid-template-columns: 0.2fr 1fr;}
 
-
-/*** goal ***/
-.goal { margin-bottom: var(--headline-margin);}
-.goal ul { list-style: square;}
-
 /*** style-guide ***/
 .style-guide { margin-bottom: var(--headline-margin);}
 .style-guide ul { margin-bottom: 80px;}
@@ -21,25 +16,3 @@ main .contents .title .des li p { display: grid; grid-template-columns: 0.2fr 1f
 
 /*** review ***/
 .review p:last-child { margin-top: 30px;}
-
-/*** btn ***/
-.go-to-top {
-  width: 50px; 
-  height: 50px; 
-  border-radius: 50%; 
-  border: none; 
-  background-color: var(--color-black); 
-  position: fixed; 
-  right: 2.2vw;
-  bottom: 95px;
-  padding: 0;
-  transition: opacity .2s, transform .2s;
-  opacity: 0;
-  scale: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.go-to-top svg { transition: .2s;}
-.go-to-top:hover { transform: translateY(-5px);}
-.go-to-top:hover { background-color: var(--color-blue);}

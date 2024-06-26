@@ -70,7 +70,7 @@ header .header-marquee {
   width: 35vw;
   height: 2.7vw;
   line-height: 2.2;
-  margin: -20px auto;
+  margin: 0 auto;
   border: 1px var(--color-gray) solid;
   border-radius: 0.3vw;
   overflow: hidden;
@@ -99,7 +99,8 @@ header .header-marquee .marquee-text .circle {
 }
 header .gnb {
   display: flex;
-  gap: 20px;
+  /* gap: 20px; */
+  column-gap: 30px;
   margin-left: 125px;
 }
 header .gnb li:first-child {

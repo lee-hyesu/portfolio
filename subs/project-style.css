@@ -45,6 +45,9 @@ main .contents .title .des p {
 }
 main .contents .title .des p span { font-weight: 300;}
 
+/*** goal ***/
+.goal { margin-bottom: var(--headline-margin);}
+
 /*** review ***/
 .review { margin-bottom: var(--headline-margin);}
 
@@ -69,3 +72,24 @@ main .contents .title .des p span { font-weight: 300;}
 .go-to-site:hover {
   background-color: var(--color-blue);
 }
+
+.go-to-top {
+  width: 50px; 
+  height: 50px; 
+  border-radius: 50%; 
+  border: none; 
+  background-color: var(--color-black); 
+  position: fixed; 
+  right: 2.2vw;
+  bottom: 95px;
+  padding: 0;
+  transition: opacity .2s, transform .2s;
+  opacity: 0;
+  scale: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.go-to-top svg { transition: .2s;}
+.go-to-top:hover { transform: translateY(-5px);}
+.go-to-top:hover { background-color: var(--color-blue);}

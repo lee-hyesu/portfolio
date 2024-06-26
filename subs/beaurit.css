@@ -1,8 +1,11 @@
 @charset "utf-8";
 
 h2 { font-family: var(--font-en);}
-main .contents .title .des li p { display: grid; grid-template-columns: 0.3fr 1fr;}
-
+main .contents .title .des li p { display: grid; grid-template-columns: 0.2fr 1fr;}
+.duties { margin-bottom: var(--headline-margin);}
+.duties ul li { margin-bottom: 30px;}
+.review .review-text-wrapper .review-text-title { margin-bottom: 30px;}
+.review-text li { list-style: none;}
 
 /*** overview-inner ***/
 .overview-inner-top {
