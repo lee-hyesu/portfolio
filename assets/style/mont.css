@@ -1,0 +1,13 @@
+@font-face {
+	font-family: 'Mont-Heavy';
+	font-weight: 900;
+	font-display: swap;
+	src: local('Mont-Heavy'), url(../fonts/Mont-HeavyDEMO.woff2) format('woff2');
+}
+
+@font-face {
+	font-family: 'Mont-Bold';
+	font-weight: 700;
+	font-display: swap;
+	src: local('Mont-Bold'), url(../fonts/FontsFree-Net-Mont-Bold.woff2) format('woff2');
+}

@@ -539,7 +539,7 @@ nav .nav-inner .links .addre p { font-size: 14px; font-style: normal; color: #99
   transition: transform 0.6s cubic-bezier(0.215, 0.61, 0.355, 1);
 }
 
-.ntck .ntck-wrapper .ntck-inner li .ntck-item .img1 {background: url(./images/ntck1-1.jpg) no-repeat;}
+.ntck .ntck-wrapper .ntck-inner li .ntck-item .img1 {background: url(./images/ntck1.jpg) no-repeat;}
 
 .ntck .ntck-wrapper .ntck-inner li .ntck-item .img2 {background: url(./images/ntck2.png) no-repeat;}
 

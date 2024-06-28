@@ -1,0 +1,49 @@
+@charset "utf-8";
+
+/*** fonts ***/
+/* 'Mont-Heavy' font-weight: 900; */
+/* 'Mont-Bold' font-weight: 700; */
+@import url(../../assets/style/mont.css);
+
+/* 'Pretendard', sans-serif */
+@import url(../../assets/style/pretendard-subset.css);
+
+/*** css 변수 ***/
+/* 전역 변수 */
+:root {
+  --font-ko: 'Pretendard', -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Apple SD Gothic Neo", Arial, sans-serif;
+  --font-en-heavy: 'Mont-Heavy', -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Apple SD Gothic Neo", Arial, sans-serif;
+  --font-en-bold: 'Mont-Bold', -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Apple SD Gothic Neo", Arial, sans-serif;
+
+  --theme-red: #E70017;
+  --dark-gray: #4B4B4B;
+  --middle-gray: #888888;
+  --light-gray: #A8A8A8;
+  
+}
+
+::-webkit-scrollbar { width: 8px;}
+::-webkit-scrollbar-thumb { 
+  width: 8px;
+  background-color: var(--light-gray);
+  border-radius: 10px;
+}
+/* body { overflow: hidden;} */
+section { word-break: keep-all;}
+section .title { text-align: center;}
+section .title span { 
+  display: block; 
+  font-size: 68px; 
+  line-height: 1.147; 
+  font-family: var(--font-en-heavy);
+}
+section .title small { 
+  display: block; 
+  text-align: center; 
+  font-size: 68px; 
+  line-height: 1.147; 
+  font-family: var(--font-en-heavy);
+}
+
+h2 { font-size: 72px; font-family: var(--font-ko);}
+h3 { font-size: 68px; font-family: var(--font-en-heavy);}

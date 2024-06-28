@@ -15,8 +15,8 @@ $('.works-container a[href="#"]').on("click", (e) => e.preventDefault());
 // 페이지가 로드될 때 실행
 document.addEventListener("DOMContentLoaded", function () {
   // 헤더 요소와 .header-marquee 요소를 가져옴
-  var header = document.querySelector("header");
-  var marquee = document.querySelector(".header-marquee");
+  let header = document.querySelector("header");
+  let marquee = document.querySelector(".header-marquee");
 
   // 스크롤 이벤트를 감지하여 헤더가 일정 이상 스크롤되면 opacity를 0으로 설정
   // 이 부분 때문에 스크롤 올릴 때 한 번 걸리는 현상 생김

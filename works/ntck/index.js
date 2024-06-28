@@ -45,7 +45,7 @@ $(".slide-inner-wrapper #main-slide1 .inner-text p").addClass("active");
 
 // 스크롤에 따른 main-nav 글씨 색상 조절
 $(window).on("scroll", () => {
-  var scrollPosition = window.scrollY;
+  let scrollPosition = window.scrollY;
 
   if (scrollPosition < 700) {
     $(".main-nav ul li:first-child p a").addClass("on");
@@ -136,7 +136,7 @@ $(document).ready(function () {
   $("#main-slide1 .more-btn p").addClass("active");
 
   $(window).scroll(function () {
-    var scrollPosition = $(this).scrollTop();
+    let scrollPosition = $(this).scrollTop();
 
     if (scrollPosition <= 800) {
       $("#main-slide1 .more-btn").addClass("on");
