@@ -1,11 +1,11 @@
 @charset "utf-8";
 
 /*** fonts ***/
-/* 'Mont-Heavy' font-weight: 900; */
-/* 'Mont-Bold' font-weight: 700; */
+/* 'Mont-Heavy' */
+/* 'Mont-Bold' */
 @import url(../../assets/style/mont.css);
 
-/* 'Pretendard', sans-serif */
+/* 'Pretendard' */
 @import url(../../assets/style/pretendard-subset.css);
 
 /*** css 변수 ***/
@@ -15,7 +15,7 @@
   --font-en-heavy: 'Mont-Heavy', -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Apple SD Gothic Neo", Arial, sans-serif;
   --font-en-bold: 'Mont-Bold', -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Apple SD Gothic Neo", Arial, sans-serif;
 
-  --theme-red: #E70017;
+  --theme-red: #EB0029;
   --dark-gray: #4B4B4B;
   --middle-gray: #888888;
   --light-gray: #A8A8A8;
@@ -25,7 +25,9 @@
 ::-webkit-scrollbar { width: 8px;}
 ::-webkit-scrollbar-thumb { 
   width: 8px;
-  background-color: var(--light-gray);
+  background-color: #2f3542;
+  background-color: var(--theme-red);
+  background-color: #050505;
   border-radius: 10px;
 }
 /* body { overflow: hidden;} */
@@ -45,5 +47,5 @@ section .title small {
   font-family: var(--font-en-heavy);
 }
 
-h2 { font-size: 72px; font-family: var(--font-ko);}
+h2 { font-size: 70px; font-family: var(--font-ko);}
 h3 { font-size: 68px; font-family: var(--font-en-heavy);}
