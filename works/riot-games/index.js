@@ -1,4 +1,4 @@
-var swiper1 = new Swiper(".visual-swiper", {
+const swiper1 = new Swiper(".visual-swiper", {
   pagination: {
     el: '.swiper-pagination',
     type: 'progressbar',
@@ -7,7 +7,7 @@ var swiper1 = new Swiper(".visual-swiper", {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
   },
-  grabCursor: true, // 마우스 그랩 기능 추가
+  grabCursor: false, // 마우스 그랩시 커서 손모양
   loop: true,
   autoplay: {
     delay: 3000,
@@ -16,13 +16,13 @@ var swiper1 = new Swiper(".visual-swiper", {
   speed: 800,
 });
 
-var swiper2 = new Swiper(".s2-swiper", {
+const swiper2 = new Swiper(".s2-swiper", {
   pagination: false,
   navigation: { // 버튼 사용자 지정
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
   },
-  grabCursor: true, // 마우스 그랩 기능 추가
+  grabCursor: false,
   loop: true,
   autoplay: false,
   slidesPerView: 'auto',
@@ -30,3 +30,32 @@ var swiper2 = new Swiper(".s2-swiper", {
   // spaceBetween: 48,
   centeredSlides: true,
 });
+
+const swiper3 = new Swiper('.s4-swiper', {
+  slidesPerView: 5,
+  spaceBetween: 24,
+  speed: 800,
+  loop: true,
+  navigation: {
+    nextEl : '.s4 .swiper-button-next',
+    prevEl: '.s4 .swiper-button-prev',
+  },
+  breakpoints: {
+    700: {
+      slidesPerView: 1,
+      spaceBetween: 24,
+    },
+  },
+  // on: {
+  //   slideChange: function () {
+  //     let wp = $(window).innerWidth();
+
+  //     if(wp > 700) {
+  //       $('.main .s4 .txt-container').addClass('down');
+  //     }
+  //   },
+  // },
+  grabCursor: false,
+  autoplay: false,
+  centeredSlides: true,
+})

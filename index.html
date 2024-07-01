@@ -3,7 +3,8 @@
 <head>
   <meta charset="utf-8" />
   <title>이혜수의 포트폴리오</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no" />
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no" />
   <!-- favicon -->
   <link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png">
@@ -17,14 +18,17 @@
   <!-- reset -->
   <link rel="stylesheet" href="./assets/style/reset.css">
   <!-- 공통된 style -->
-  <link rel="stylesheet" href="./index.css"><!-- 헤더 및 index 내용 포함 -->
+  <link rel="stylesheet" href="./index.css">
   <!-- 이 페이지에만 들어가는 style -->
-   <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="./style.css">
+  <!-- AOS 라이브러리 -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <!-- jQuery -->
   <script src="./assets//js/jquery-3.7.1.min.js"></script>
   <!-- Plug In -->
   <!-- <script src="./assets/gsap.min.js"></script> -->
   <!-- <script src="./assets/TextPlugin.min.js"></script> 텍스트 타이핑-->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <!-- 이 페이지에만 들어가는 js -->
   <script defer src="./index.js"></script>
 </head>
@@ -34,11 +38,11 @@
     <div class="header-inner">
       <a href="https://lee-hyesu.github.io/portfolio/">Welcome to Hye-Su's portfolio</a>
       <div class="header-marquee">
-        <div class="marquee-text">안녕하세요, 웹 퍼블리셔 이혜수입니다!<span class="circle"></span></div>
-        <div class="marquee-text">안녕하세요, 웹 퍼블리셔 이혜수입니다!<span class="circle"></span></div>
-        <div class="marquee-text">안녕하세요, 웹 퍼블리셔 이혜수입니다!<span class="circle"></span></div>
-        <div class="marquee-text">안녕하세요, 웹 퍼블리셔 이혜수입니다!<span class="circle"></span></div>
-        <div class="marquee-text">안녕하세요, 웹 퍼블리셔 이혜수입니다!<span class="circle"></span></div>
+        <div class="marquee-text">안녕하세요, 신입 웹 퍼블리셔 이혜수입니다!<span class="circle"></span></div>
+        <div class="marquee-text">안녕하세요, 신입 웹 퍼블리셔 이혜수입니다!<span class="circle"></span></div>
+        <div class="marquee-text">안녕하세요, 신입 웹 퍼블리셔 이혜수입니다!<span class="circle"></span></div>
+        <div class="marquee-text">안녕하세요, 신입 웹 퍼블리셔 이혜수입니다!<span class="circle"></span></div>
+        <div class="marquee-text">안녕하세요, 신입 웹 퍼블리셔 이혜수입니다!<span class="circle"></span></div>
       </div>
       <ul class="gnb">
         <li><a href="#about">About</a></li>
@@ -80,7 +84,10 @@
   </section>
 
   <section id="about">
-    <h2>About</h2>
+    <div class="title-box">
+      <h2>About</h2>
+      <div class="title-line"></div>
+    </div>
     <div class="about-inner">
       <!-- book-open.svg -->
       <svg width="38" height="38" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -96,12 +103,13 @@
         </defs>
       </svg>
       <h3>Who Am I?</h3>
-      <p class="about-text desc">이용자가 편리함을 느끼는 웹사이트를 추구합니다.<br></p>
+      <div class="about-text desc" data-aos="fade-up">
+        <p>어제 보다 발전한 오늘!</p>
+        <p>배우려는 자세로 차근차근 성장하겠습니다.</p>
+      </div>
     </div>
-
     <!-- who am i 아래 파란 선 -->
     <!-- <div class="line"></div> -->
-
     <div class="skills-container">
       <h3>Skills</h3>
       <div class="skills-inner">
@@ -123,7 +131,8 @@
               <strong>JavaScript & jQuery</strong>
             </p>
             <p>
-              <span>ES6+ 문법에 맞는 코드 작성, 변수 및 함수의 유효 범위, 호이스팅, event.target 등의 실행 컨텍스트 이해, GSAP 활용, Ajax & JSON 등등 관련 능력 작성</span>
+              <span>ES6+ 문법에 맞는 코드 작성, 변수 및 함수의 유효 범위, 호이스팅, event.target 등의 실행 컨텍스트 이해, GSAP 활용, Ajax & JSON를 활용한 웹사이트
+                제작</span>
             </p>
           </div>
         </div>
@@ -145,7 +154,7 @@
               <strong>GIT&GITHUB</strong>
             </p>
             <p>
-              <span>Git Bash를 통해 파일 백업 및 업데이트, GitHub와 연동 및 repositori 관리</span>
+              <span>Git Bash를 통해 파일 백업 및 업데이트, GitHub와 연동 및 repository 관리</span>
             </p>
           </div>
         </div>
@@ -154,7 +163,10 @@
   </section>
 
   <section id="works">
-    <h2>Works</h2>
+    <div class="title-box">
+      <h2>Works</h2>
+      <div class="title-line"></div>
+    </div>
     <!-- folder.svg -->
     <div class="works-inner">
       <svg width="50" height="38" viewBox="0 0 50 38" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -162,15 +174,12 @@
           d="M45.3125 6.33333H26.5625L20.3125 0H4.6875C2.09863 0 0 2.12661 0 4.75V33.25C0 35.8734 2.09863 38 4.6875 38H45.3125C47.9014 38 50 35.8734 50 33.25V11.0833C50 8.45995 47.9014 6.33333 45.3125 6.33333Z"
           fill="black" />
       </svg>
-
     </div>
     <div class="works-text-box">
       <!-- 프로젝트 관련 이미지 영역  -->
       <div class="works-img">
-        <!-- 프로젝트 관련 이미지 추후 수정 -->
-         <img src="./subs/images/parking_uiux.png" alt="세진브론즈빌 주차장 ui/ux디자인 이미지">
+        <img src="./subs/images/parking_uiux.png" alt="세진브론즈빌 주차장 ui/ux디자인 이미지">
       </div>
-
       <ul class="works-container">
         <li class="sort-container"><!-- 그리드 repeat(13, 1fr) -->
           <strong>project name</strong><!-- grid-column: span 5 -->
@@ -186,35 +195,41 @@
         </li>
         <li>
           <a href="#">
-            <span>개인 프로젝트명2</span>
-            <span>웹 사이트 리디자인 및 구현</span>
+            <span>라이엇게임즈</span>
+            <span>라이엇게임즈 웹사이트 리디자인 및 구현</span>
             <span>개인 프로젝트</span>
           </a>
         </li>
-        <li>
+        <li class="ntck">
           <a href="https://lee-hyesu.github.io/portfolio/subs/ntck.html" target="_blank">
             <span>국립극단</span>
-            <span>해당 웹 사이트 리디자인 및 구현</span>
+            <span>국립극단 웹사이트 리디자인 및 구현</span>
             <span>개인 프로젝트</span>
           </a>
         </li>
-        <li>
+        <li class="beaurit">
           <a href="https://lee-hyesu.github.io/portfolio/subs/beaurit.html" target="_blank">
             <span>Beaurit</span>
-            <span>자바스크립트를 이용한 쇼핑몰 사이트 제작</span>
+            <span>자바스크립트를 이용한 쇼핑몰 웹사이트 제작</span>
             <span>팀 프로젝트</span>
           </a>
         </li>
         <li class="sejin">
           <a href="https://lee-hyesu.github.io/portfolio/subs/sejin-parking.html" target="_blank">
-            <span>세진브론즈빌 주차장 예약</span>
-            <span>주차장 예약 웹앱 UI/UX 디자인</span>
+            <span>주차장 예약 시스템 UI/UX 디자인</span>
+            <span>세진 브론즈빌 주차장 예약 웹앱 UI/UX 디자인</span>
             <span>팀 프로젝트</span>
           </a>
         </li>
       </ul>
     </div>
   </section>
+  <!-- <footer>
+    <div class="footer-inner">
+      <p>Contact</p>
+      <p></p>
+    </div>
+  </footer> -->
 </body>
 
 </html>

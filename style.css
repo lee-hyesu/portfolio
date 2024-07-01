@@ -151,25 +151,19 @@
 #about .about-inner {
   margin-top: 1.8vw;
 }
-#about h2 {
+#about .title-box { display: flex; align-items: center;}
+#about .title-box h2 {
   font-size: 5rem;
   text-align: left;
-  position: relative;
+  margin-right: 20px;
 }
-#about h2::after {
+#about .title-box .title-line {
   content: '';
-  position: absolute;
-  width: 360px;
+  width: 0;
   height: 3px;
   background-color: var(--color-blue);
-  top: 57%;
-  left: 13%;
   transform-origin: left;
-  animation: animateLine 5s;
-}
-@keyframes animateLine {
-  from { transform: scale(0); }
-  to { transform: scale(1); }
+  transition: 3s;
 }
 #about h3 {
   font-size: 4rem;
@@ -182,6 +176,7 @@
   margin: 1vw 0 2.5vw;
   font-size: 1.2rem;
 }
+#about .about-text p:first-child { margin-bottom: 10px;}
 
 .skills-container {
   display: flex;
@@ -221,27 +216,20 @@
   height: 100vh;
   padding: 4vw 2.2vw 0;
 }
-#works h2 {
+#works .title-box { display: flex; align-items: center;}
+#works .title-box h2 {
   font-size: 5rem;
   text-align: left;
-  position: relative;
+  margin-right: 20px;
 }
-#works h2::after {
+#works .title-box .title-line {
   content: '';
-  position: absolute;
-  width: 330px;
+  width: 0;
   height: 3px;
   background-color: var(--color-blue);
-  top: 57%;
-  left: 14%;
   transform-origin: left;
-  animation: animateLine 5s;
+  transition: 3s;
 }
-@keyframes animateLine {
-  from { transform: scale(0); }
-  to { transform: scale(1); }
-}
-
 #works .works-inner {
   margin: 1.8vw 0 5.5vw;
 }
@@ -249,7 +237,6 @@
   width: 38px;
   height: 38px;
 }
-
 #works .works-text-box {
   /* display: grid; */
   /* grid-template-columns: repeat(20, minmax(0, 1fr)); */
@@ -305,5 +292,19 @@
 #works .works-text-box .works-container .sort-container strong:nth-child(3) {
   grid-column: 13;
 }
+#works .works-text-box .works-img img {
+  width: 100%;
+  background-color: #ddd;
+  opacity: 0;
+  transition: .2s;
+}
 
-#works .works-text-box .works-img img { width: 100%; background-color: #ddd;}
+/*** footer ***/
+/* .footer-inner::before {
+  content: "";
+  background-color: var(--font-gray);
+  width: 1200px;
+  height: 1px;
+  display: block;
+  margin: 0 auto;
+} */

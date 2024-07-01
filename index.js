@@ -1,10 +1,12 @@
-/*
-gsap.to(".main-text span", { 
-  duration: 4.5, text: "Lee Hye Su." ,
-//   repeat: -1,
-//   yoyo: true
+AOS.init({
+  duration: 1000,
 });
-*/
+
+// 현재 스크롤 위치 확인
+window.onscroll = function () {
+  var scrollPosition = window.scrollY;
+  console.log("현재 스크롤 위치: " + scrollPosition + "px");
+};
 
 /* 로고 클릭 시 이동을 억제함 */
 // $('a[href="#"]').on("click", (e) => e.preventDefault());
@@ -29,4 +31,56 @@ document.addEventListener("DOMContentLoaded", function () {
       header.style.padding = "2.2vw 0 0";
     }
   });
+});
+
+$(window).on('scroll', () => {
+  let scrollPosition = window.scrollY;
+  if (scrollPosition >= 200) {
+    $('#about .title-box .title-line').css({
+      'width': '330px',
+    });
+  } else {
+    $('#about .title-box .title-line').css({
+      'width': '0',
+    });
+  }
+
+  if (scrollPosition >= 1110) {
+    $('#works .title-box .title-line').css({
+      'width': '330px',
+    });
+  } else {
+    $('#works .title-box .title-line').css({
+      'width': '0',
+    });
+  }
+});
+
+// .sejin 요소에 마우스 이벤트 리스너 추가
+$('#works .works-text-box .sejin').on('mouseenter', () => {
+  $('#works .works-text-box .works-img img').attr('src', './images/pf-parking.jpg');
+  $('#works .works-text-box .works-img img').css('opacity', '1');
+});
+
+$('#works .works-text-box .sejin').on('mouseleave', () => {
+  $('#works .works-text-box .works-img img').attr('src', './images/pf-parking.jpg');
+  $('#works .works-text-box .works-img img').css('opacity', '0');
+});
+// .beaurit
+$('#works .works-text-box .beaurit').on('mouseenter', () => {
+  $('#works .works-text-box .works-img img').attr('src', './images/pf-beaurit.jpg');
+  $('#works .works-text-box .works-img img').css('opacity', '1');
+});
+$('#works .works-text-box .beaurit').on('mouseleave', () => {
+  $('#works .works-text-box .works-img img').css('opacity', '0');
+});
+// 국립극단
+$('#works .works-text-box .ntck').on('mouseenter', () => {
+  $('#works .works-text-box .works-img img').attr('src', './images/pf-ntck.jpg');
+  $('#works .works-text-box .works-img img').css('opacity', '1');
+});
+
+$('#works .works-text-box .ntck').on('mouseleave', () => {
+  $('#works .works-text-box .works-img img').attr('src', './images/pf-ntck.jpg');
+  $('#works .works-text-box .works-img img').css('opacity', '0');
 });
