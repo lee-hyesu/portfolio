@@ -30,7 +30,12 @@
   background-color: #050505;
   border-radius: 10px;
 }
-/* body { overflow: hidden;} */
+
+em {font-style: normal; vertical-align: baseline;}
+h2 { font-size: 70px; font-family: var(--font-ko);}
+h3 { font-size: 68px; font-family: var(--font-en-heavy);}
+
+.wrap { width: calc(100% - 80px);}
 section { word-break: keep-all;}
 section .title { text-align: center;}
 section .title span { 
@@ -46,6 +51,3 @@ section .title small {
   line-height: 1.147; 
   font-family: var(--font-en-heavy);
 }
-
-h2 { font-size: 70px; font-family: var(--font-ko);}
-h3 { font-size: 68px; font-family: var(--font-en-heavy);}
