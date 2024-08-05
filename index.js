@@ -3,10 +3,10 @@ AOS.init({
 });
 
 // 현재 스크롤 위치 확인
-window.onscroll = function () {
-  var scrollPosition = window.scrollY;
-  console.log("현재 스크롤 위치: " + scrollPosition + "px");
-};
+// window.onscroll = function () {
+//   var scrollPosition = window.scrollY;
+//   console.log("현재 스크롤 위치: " + scrollPosition + "px");
+// };
 
 /* 로고 클릭 시 이동을 억제함 */
 // $('a[href="#"]').on("click", (e) => e.preventDefault());
