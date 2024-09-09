@@ -81,6 +81,7 @@ header .header-wrapper .gnb {
   display: flex;
   font-family: var(--font-ko);
   height: 100%;
+  margin-right: -40px;
 }
 header .header-wrapper .gnb li {
   height: 100%;
@@ -144,7 +145,7 @@ header .header-wrapper .gnb li .lnb li:first-child:hover { color: var(--theme-re
 header .header-wrapper .gnb li .lnb li:nth-child(2):hover { color: var(--theme-red);}
 header .header-wrapper .gnb li .lnb li:last-child:hover { color: var(--theme-red);}
 
-@media (max-width: 1600px) {
+@media (max-width: 1024px) {
  header .header-wrapper .logo img { width: 154px;}
 
   

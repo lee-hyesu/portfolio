@@ -204,9 +204,11 @@ main .s1 .swiper-slide img {
    bottom: 104px;
    transform: unset;
   }
-  main .s1 .swiper .txt-box h2 {
+  main .s1 .swiper .txt-box h2 strong {
     font-size: 40px;
     line-height: 48px;
+    /* 인라인 블라으로 바꾸면 행간이 붙음. 왜 그럴까? */
+    display: inline-block;
   }
   main .s1 .swiper .txt-box h2 em { font-size: 16px;}
   main .s1 .swiper .txt-box .slide-control {
