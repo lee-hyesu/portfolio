@@ -217,8 +217,8 @@ main .s1 .swiper-slide img {
     left: 0;
   }
   main .s1 .swiper-slide img { height: calc((480 * 100) / 768 * 1vw);}
-
  }
+
 @media (max-width: 1180px) {
   main .s1 .swiper .txt-box .slide-control .swiper-pagination {
     width: calc(100vw - (150px + 80px));
@@ -246,6 +246,9 @@ main .s2 .wrap .title span.on {
 main .s2 .s2-swiper {
   margin-top: 60px;
   position: relative;
+}
+@media (max-width: 1024px) {
+main .s2 .s2-swiper { margin-top: 24px;}
 }
 main .s2 .s2-swiper .swiper-wrapper .swiper-slide {
   width: 500px;
